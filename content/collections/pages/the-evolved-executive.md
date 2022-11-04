@@ -92,6 +92,19 @@ blocks:
           -
             type: text
             text: 'A transformational mentorship journey that integrates diverse modalities, including somatics, energetics, and neuroplasticity.'
+      -
+        type: set
+        attrs:
+          values:
+            type: image
+            image: content/being-happy-z267ruyvc9lvscvh0eayf.webp
+            include_shadow: false
+            animate_image: true
+            animation_speed: fast
+      -
+        type: paragraph
+        attrs:
+          class: null
     right_column:
       -
         type: heading
@@ -596,5 +609,5 @@ blocks:
           class: null
 parent: ac915086-2ff0-496b-b734-b7d073d4e587
 updated_by: bd153216-d5f9-4c8b-8d57-d966665b740d
-updated_at: 1667592287
+updated_at: 1667592358
 ---
