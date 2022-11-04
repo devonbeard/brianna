@@ -1,7 +1,7 @@
 ---
 id: 07716674-15e5-4e31-bd0c-36d6aed4cf75
 blueprint: page_builder
-title: 'The Evolved Executive (Duplicated)'
+title: 'The Embodied Manager'
 blocks:
   -
     background_color:
@@ -583,5 +583,5 @@ blocks:
           class: null
 parent: ac915086-2ff0-496b-b734-b7d073d4e587
 updated_by: bd153216-d5f9-4c8b-8d57-d966665b740d
-updated_at: 1667591086
+updated_at: 1667591125
 ---
