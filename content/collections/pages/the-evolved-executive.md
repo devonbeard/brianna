@@ -72,6 +72,19 @@ blocks:
     section_headline_alignment: center
     left_column:
       -
+        type: set
+        attrs:
+          values:
+            type: image
+            image: content/training-employees-2-0ikdpiy5202s5gfhfvyzpn.webp
+            include_shadow: false
+            animate_image: true
+            animation_speed: fast
+      -
+        type: paragraph
+        attrs:
+          class: null
+      -
         type: paragraph
         attrs:
           class: null
@@ -583,5 +596,5 @@ blocks:
           class: null
 parent: ac915086-2ff0-496b-b734-b7d073d4e587
 updated_by: bd153216-d5f9-4c8b-8d57-d966665b740d
-updated_at: 1667591086
+updated_at: 1667592287
 ---
