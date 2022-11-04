@@ -1,0 +1,13 @@
+<div class="button-block pt4 {{ if button_horizontal_position == 'center' }}tc{{ elseif button_horizontal_position == 'right' }}tr{{ else }}tl{{ /if }}">
+  <a href="{{ button_url }}"
+    class="br-pill inline-flex items-center btn btn-primary {{ if button_theme == 'secondary' }}btn-secondary{{ elseif button_theme == 'tertiary' }}btn-tertiary{{ else }}{{ /if }}"
+    {{ if open_in_new_window }}target="_blank" rel="nofollow"{{ /if }}
+  >
+    {{ button_text }}
+    {{ if include_button_arrow }}
+      <span class="pl3 relative" style="top: -2px;">
+        {{ svg src="assets/site/svg/button-arrow" }}
+      </span>
+    {{ /if }}
+  </a>
+</div>

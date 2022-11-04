@@ -1,0 +1,10 @@
+{{ if section_headline }}
+<div class="mw9 center">
+  <h2
+    id="{{ section_headline | slugify }}"
+    class="f-headline-l f2 mb4 pb4-ns {{ if section_headline_alignment == 'left' }}tl{{ else if section_headline_alignment == 'right'}}tr{{ else }}tc{{ /if}}"
+  >
+    {{ section_headline }}
+  </h2>
+</div>
+{{ /if }}

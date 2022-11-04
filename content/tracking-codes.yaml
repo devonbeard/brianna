@@ -1,0 +1,21 @@
+enabled: true
+scripts:
+  -
+    enabled: true
+    name: 'Google Analytics'
+    script: |-
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZCPWL5TFD"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-XZCPWL5TFD');
+      </script>
+    position: head
+  -
+    enabled: true
+    name: 'Keap / Infusionsoft Tracking'
+    script: '<script defer type="text/javascript" src="https://esf474.infusionsoft.app/app/webTracking/getTrackingCode"></script>'
+    position: footer

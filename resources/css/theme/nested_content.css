@@ -1,0 +1,134 @@
+h1,
+h2,
+h3 {
+  @extend .f-alt;
+}
+
+h1 {
+  @extend .lh-copy;
+  @extend .f2;
+  @extend .mb3;
+}
+
+h2 {
+  @extend .f3;
+  @extend .mb3;
+}
+
+@media (--breakpoint-not-small) {
+  h1 {
+    @extend .lh-title;
+    @extend .f1;
+    @extend .mb4;
+  }
+
+  h2 {
+    @extend .lh-title;
+    @extend .f2;
+    @extend .mb4;
+  }
+}
+
+.content {
+  p + h2,
+  ul + h2,
+  ol + h2 {
+    margin-top: 3rem;
+  }
+
+  p + h3,
+  ul + h3,
+  ol + h3 {
+    margin-top: 2rem;
+  }
+
+  h3 {
+    @extend .f5;
+    @extend .mb3;
+    @extend .pb2;
+  }
+
+  h6 {
+    @extend .f4;
+    @extend .f-main--b;
+
+    strong {
+      /* @extend .f2; */
+      @extend .lh-title;
+      @extend .f-main--b;
+    }
+  }
+
+  blockquote {
+    @extend .f3-l;
+    @extend .f3;
+    @extend .f-alt;
+    @extend .mv4;
+  }
+
+  p strong {
+    @extend .f-main--m;
+  }
+
+  p {
+    margin-bottom: 2rem;
+  }
+
+  h5,
+  h6,
+  p,
+  ol,
+  ul {
+    @extend .mb3;
+  }
+
+  a:not(.btn) {
+    color: var(--primary-1);
+  }
+
+  ol,
+  ul {
+    @extend .ml4;
+  }
+
+  li {
+    @extend .pl3;
+  }
+
+  li p {
+    @extend .mb2;
+    @extend .pb1;
+  }
+
+  :last-child {
+    @extend .mb0;
+  }
+}
+
+.post-content {
+  ul {
+    max-width: inherit;
+  }
+}
+
+@media (--breakpoint-not-small) {
+  .full-width-cta {
+    min-height: 600px;
+  }
+}
+
+.quote-max-width {
+  max-width: 400px;
+}
+
+.columns-block + .columns-block {
+  padding-top: 0 !important;
+}
+
+p + .button-block {
+  padding-top: 1rem !important;
+}
+
+.article-featured-img {
+  max-width: 115px;
+}

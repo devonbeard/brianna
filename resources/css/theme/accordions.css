@@ -1,0 +1,23 @@
+/** This class will hide all the body be default **/
+.js-accordion .js-accordion-content {
+  display: none;
+}
+
+/** This class will show the body if it has a parent with active class **/
+.js-accordion.is-active .js-accordion-content {
+  display: block;
+}
+
+.js-accordion.is-active .js-accordion-btn {
+  border-bottom: 0;
+  @extend .f-main--b;
+}
+
+.js-accordion.is-active .js-accordion-btn span {
+  transform: rotate(-180deg);
+  transform-origin: center;
+}
+
+.js-accordion-btn:focus {
+  outline: 0;
+}

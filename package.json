@@ -1,0 +1,39 @@
+{
+  "private": true,
+  "scripts": {
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "production": "mix --production"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "cross-env": "^5.1",
+    "install": "^0.13.0",
+    "laravel-mix": "^6.0.37",
+    "laravel-mix-purgecss": "^6.0.0",
+    "npm": "^8.19.2",
+    "postcss-advanced-variables": "^3.0.1",
+    "postcss-at-rules-variables": "^0.2.1",
+    "postcss-conditionals": "^2.1.0",
+    "postcss-css-variables": "^0.18.0",
+    "postcss-each": "^1.1.0",
+    "postcss-extend": "^1.0.5",
+    "postcss-for": "^2.1.1",
+    "postcss-functions": "^4.0.2",
+    "postcss-import": "^14.0.2",
+    "postcss-nested": "^4.1.2",
+    "postcss-nth-list": "^1.0.2",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-sassy-mixins": "^2.1.0",
+    "postcss-simple-vars": "^6.0.2",
+    "prettier": "2.2.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "dependencies": {
+    "intersection-observer": "^0.12.0",
+    "postcss": "^8.3.6",
+    "postcss-loader": "^6.1.1"
+  }
+}

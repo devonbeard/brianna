@@ -1,0 +1,11 @@
+default:
+  enable_sitemap: true
+  sitemap_cache_expiration: '180'
+  exclude_content_section: null
+  exclude_collections: null
+  exclude_taxonomies: null
+  taxonomies_section: null
+  taxonomy_collection_map:
+    -
+      taxonomy: categories
+      collection: insights

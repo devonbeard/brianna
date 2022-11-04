@@ -1,0 +1,76 @@
+<div class="pv3-l ph3-l relative">
+  <header class="center flex justify-between items-center ph3 js-header">
+    <a
+      href="{{ link to='/' }}"
+      class="logo db mw4 mw-none-l c-black js-logo"
+      title="{{ site_name }}"
+    >
+      <span class="clip">{{ config:app:name }}</span>
+
+      <img src="{{ site_globals:site_logo }}" alt="" style="max-width: 148px" />
+    </a>
+
+    <button class="db dn-l js-mobile-menu-btn b0 p0 btn-reset">
+      <span class="clip">Toggle Menu</span>
+      {{ svg src="assets/site/svg/mobile-nav-open" class="js-mobile-open-icon
+      db" }} {{ svg src="assets/site/svg/mobile-nav-close"
+      class="js-mobile-close-icon dn" }}
+    </button>
+
+    <nav class="dn flex-l justify-between items-center f5">
+      {{ nav:navigation }}
+      <div class="js-menu-parent">
+        <a
+          href="{{ url }}"
+          class="nav__link db f-alt no-underline relative {{ if !last }}mr4-l pr3-l{{ /if }} {{ if is_current || is_parent }}is-active{{ /if }} {{ if children }}js-subnav{{ /if }}"
+          style="color: currentColor"
+          ><span class="dib">{{ title }}</span>
+
+          {{ if children }}{{ svg src="assets/site/svg/caret-down" class="pl2
+          nav-caret" }} {{ svg src="assets/site/svg/caret-down" class="pl2 dn
+          nav-close" }}{{/if }}
+        </a>
+        {{ if children }}
+        <nav class="absolute mt2 nl2 dn js-child-nav bg-primary pv3 z-999">
+          {{ children }}
+          <a
+            href="{{ url }}"
+            class="pv2 ph3 db c-white no-underline f-alt hover-bg-black nav__child-link"
+            >{{ title }}</a
+          >
+          {{ /children }}
+        </nav>
+        {{ /if }}
+      </div>
+      {{ /nav:navigation }}
+    </nav>
+
+    <nav
+      class="dn justify-between items-center f5 js-mobile-nav absolute left-0 right-0 top-0 bg-primary c-white mt5 pt3 ph3 z-999"
+    >
+      {{ nav:navigation }}
+      <div>
+        <a
+          href="{{ url }}"
+          class="nav__link flex justify-between f2 pv3 f-alt no-underline relative pr1 {{ if children }}js-subnav{{ /if }}"
+          style="color: currentColor"
+          ><span class="dib">{{ title }}</span>
+          {{ if children }} {{ svg src="assets/site/svg/arrow-down" class="pl2
+          nav-arrow" }}{{/if }}
+        </a>
+        {{ if children }}
+        <nav class="dn js-child-nav bg-primary">
+          {{ children }}
+          <a
+            href="{{ url }}"
+            class="pv2 db c-white no-underline f-alt nav__child-link"
+            >{{ title }}</a
+          >
+          {{ /children }}
+        </nav>
+        {{ /if }}
+      </div>
+      {{ /nav:navigation }}
+    </nav>
+  </header>
+</div>

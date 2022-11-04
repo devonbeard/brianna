@@ -1,0 +1,26 @@
+<div class="mv3">
+  <aside class="flex flex-wrap ba bc-gray-1 shadow-1 nl5-l nr5-l mv4">
+    <div
+      class="ph5-l ph4 pv4 tc tl-l w-70-ns w-100 {{ if featured_image }}w-70-ns order-0-ns order-1{{ else }}w-auto-l{{ /if }}"
+    >
+      <h2 class="f1 mb3 pt3">{{ title }}</h2>
+      <p class="f3 measure center">{{ description }}</p>
+      <a href=""></a>
+
+      <a
+        href="{{ cta_button_link }}"
+        class="dim c-white-1 no-underline f-main--db f5 br-pill bg-primary-1 btn ph4 pv2 db mb3"
+      >
+        <span class="pv1 ph2 dib">{{ cta_button_text }}</span>
+      </a>
+    </div>
+
+    {{ if featured_image }}
+    <div
+      class="w-30-ns w-100 inline-flex justify-center items-center bg-primary-2 order-1-ns order-0"
+    >
+      {{ responsive:featured_image alt="{alt}" }}
+    </div>
+    {{ /if }}
+  </aside>
+</div>

@@ -1,0 +1,20 @@
+<section
+  class="pt6-l pb0-l pt5 pb3 ph3 ph4-m ph5-ns {{ if background_color }}bg-{{ background_color.label | lower }}{{ /if }} {{ if text_color }}c-{{ text_color.label | lower }}{{ /if }}"
+>
+  {{ partial:section_headline }}
+
+  <div class="mw9 center flex-l flex-wrap justify-between pr4-l">
+    {{ icon_block }}
+    <div
+      class="w-50-l mw6 content mb6-l mb5 {{ if icon_horizontal }}flex-ns{{ /if }}"
+    >
+      <div class="mb3 {{ if icon_horizontal }}w4-ns tc-ns mr3{{ /if }}">
+        {{ responsive:image alt="{caption || alt}" loading="lazy" class="dib" }}
+      </div>
+      <div class="{{ if icon_horizontal }}w-80{{ /if }}">
+        {{ content }} {{ partial src="sets/{type}" }} {{/content }}
+      </div>
+    </div>
+    {{ /icon_block }}
+  </div>
+</section>

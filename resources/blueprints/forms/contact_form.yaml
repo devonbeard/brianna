@@ -1,0 +1,75 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: first_name
+        field:
+          input_type: text
+          antlers: false
+          display: 'First Name'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          placeholder: Elon
+          validate:
+            - required
+      -
+        handle: last_name
+        field:
+          input_type: text
+          antlers: false
+          display: 'Last Name'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+      -
+        handle: email
+        field:
+          input_type: text
+          antlers: false
+          display: Email
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+            - email
+      -
+        handle: phone
+        field:
+          input_type: text
+          antlers: false
+          display: Phone
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+      -
+        handle: company
+        field:
+          input_type: text
+          antlers: false
+          display: Company
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: looking_help
+        field:
+          antlers: false
+          display: 'I''m looking for help with:'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required

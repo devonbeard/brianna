@@ -1,0 +1,4 @@
+title: 'Site Settings'
+data:
+  site_logo: site/logo.webp
+  copyright: '&copy; Copyright {{ now format="Y" }} Brianna Brown. All Rights Reserved'

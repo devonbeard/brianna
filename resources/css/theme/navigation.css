@@ -1,0 +1,31 @@
+.nav__link span:after {
+  background-color: var(--primary);
+  content: '';
+  display: block;
+  height: 2px;
+  transition: 0.2s ease-in-out width;
+  width: 0;
+}
+
+.nav__link:focus-within span:after,
+.nav__link:hover span:after,
+.nav__link.is-active span:after {
+  width: 100%;
+}
+
+.nav__child-link {
+  transition: 0.2s ease-in-out background;
+}
+
+.nav__link.is-toggled .nav-caret {
+  display: none !important;
+}
+
+.nav__link.is-toggled .nav-close {
+  display: inline-block !important;
+  transform: translate(8px, 0) rotate(-180deg);
+}
+
+.js-subnav.is-toggled .nav-arrow {
+  transform: translate(8px, 0) rotate(-180deg);
+}

@@ -1,0 +1,41 @@
+<section
+  class="columns-block {{ partial src='styles/bg_and_text_color' }} {{ partial src='styles/spacing_above' }} {{ partial src='styles/spacing_below' }} {{ partial src='styles/padding_above' }} {{ partial src='styles/padding_below' }} {{ if !padding_above_columns || !padding_below_columns }}pv6-l pt5 pb3{{ /if }} ph5-ns ph4"
+>
+  {{ partial:section_headline }}
+  <div
+    class="mw9 center flex-l flex-wrap justify-between {{ if column_vertical_alignment }}{{ if column_vertical_alignment == 'middle' }}items-center{{ /if}}{{ if column_vertical_alignment == 'bottom' }}items-end{{ /if}}{{ /if}}"
+  >
+    {{ if number_of_columns == "one" || column_width == 'full' }}
+    <div class="w-100-l center content">
+      {{ column }} {{ partial src="sets/{type}" }} {{ /column }}
+    </div>
+    {{ elseif number_of_columns == "three" }}
+    <div
+      class="{{ if column_width == 'twentyfive-fifty' }}w-25-l{{ else }}w-33-l{{ /if }} mw7-l pr4-l center content mb0-l mb4 {{ if swap_order_of_columns }}order-1-ns{{ /if }}"
+    >
+      {{ left_column }} {{ partial src="sets/{type}" }} {{ /left_column }}
+    </div>
+    <div
+      class="{{ if column_width == 'twentyfive-fifty' }}w-50-l ph3-l{{ else }}w-33-l{{ /if }} mw7-l pr4-l center content mb0-l mb4 {{ if swap_order_of_columns }}order-1-ns{{ /if }}"
+    >
+      {{ middle_column }} {{ partial src="sets/{type}" }} {{ /middle_column }}
+    </div>
+    <div
+      class="{{ if column_width == 'twentyfive-fifty' }}w-25-l{{ else }}w-33-l{{ /if }} columns--last mw7-l mb5 mb0-l center content {{ if swap_order_of_columns }}order-0-ns{{ /if }}"
+    >
+      {{ right_column }} {{ partial src="sets/{type}" }} {{ /right_column }}
+    </div>
+    {{ else }}
+    <div
+      class="{{ if column_width == 'seventy-thirty' }}w-70-l ph6-l{{ else }}w-50-l{{ /if }} mw7-l pr4-l center content mb0-l mb4 {{ if swap_order_of_columns }}order-1-ns{{ /if }}"
+    >
+      {{ left_column }} {{ partial src="sets/{type}" }} {{ /left_column }}
+    </div>
+    <div
+      class="{{ if column_width == 'seventy-thirty' }}w-30-l{{ else }}w-50-l{{ /if }} columns--last mw7-l mb5 mb0-l center content {{ if swap_order_of_columns }}order-0-ns{{ /if }}"
+    >
+      {{ right_column }} {{ partial src="sets/{type}" }} {{ /right_column }}
+    </div>
+    {{ /if }}
+  </div>
+</section>

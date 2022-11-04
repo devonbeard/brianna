@@ -1,0 +1,100 @@
+<section class="articles-list">
+  <div class="flex items-center bb bw1 bc-gray-1 pb4">
+    {{ svg src="assets/site/svg/dot" color="{{ accent_color.value.0 }}" }}
+    <h3 class="ml3 pb0">{{ headline }}</h3>
+  </div>
+  <ul class="list pl0 ml0">
+    {{ if articles }} {{ articles }}
+    <li class="pl0 bb bw1 bc-gray-1">
+      <a
+        class="pv3 no-underline article-btn db w-100 relative"
+        href="{{ url }}"
+      >
+        <span class="dib flex items-center justify-between pv2 pr6-l pr5">
+          {{ title }}
+          <span class="dib absolute pr3 right-0 article-btn-arrow">
+            {{ svg src="assets/site/svg/button-arrow" color="{{
+            accent_color.value.0 }}" }}
+          </span>
+        </span>
+      </a>
+    </li>
+    {{ /articles }} {{ elseif articles_by_category }}
+    <div>
+      {{ articles_by_category }} {{ collection:insights
+      taxonomy:categories="{slug}" limit="5" }} {{ if no_results }}
+      <li class="pl0 bb bw1 bc-gray-1 pv2">
+        <span class="dib flex items-center justify-between pv3 pr6-l pr5">
+          No Articles Found
+        </span>
+      </li>
+      {{ else }}
+      <li class="pl0 bb bw1 bc-gray-1">
+        <a
+          class="pv3 no-underline article-btn db w-100 relative"
+          href="{{ url }}"
+        >
+          <span class="dib flex items-center justify-between pv2 pr6-l pr5">
+            {{ title }}
+            <span class="dib absolute pr3 right-0 article-btn-arrow">
+              {{ svg src="assets/site/svg/button-arrow" color="{{
+              accent_color.value.0 }}" }}
+            </span>
+          </span>
+        </a>
+      </li>
+      {{ /if }} {{ /collection:insights }} {{ /articles_by_category }}
+    </div>
+    {{ /if }} {{ if articles || articles_by_category }} {{ else}}
+    <div>
+      {{ collection:insights limit="5" }}
+      <li class="pl0 bb bw1 bc-gray-1">
+        <a
+          class="pv3 no-underline article-btn db w-100 relative"
+          href="{{ url }}"
+        >
+          <span class="dib flex items-center justify-between pv2 pr6-l pr5">
+            {{ title }}
+            <span class="dib absolute pr3 right-0 article-btn-arrow">
+              {{ svg src="assets/site/svg/button-arrow" color="{{
+              accent_color.value.0 }}" }}
+            </span>
+          </span>
+        </a>
+      </li>
+      {{ /collection:insights }}
+    </div>
+    {{ /if }} {{ if view_more_articles_link && articles || articles_by_category
+    }}
+    <li class="pl0 bb bw1 bc-gray-1">
+      <a
+        class="pv3 no-underline article-btn db w-100 relative"
+        href="{{ view_more_articles_link }}"
+      >
+        <span class="dib flex items-center justify-between pv2 pr6-l pr5">
+          {{ view_more_articles_cta_text }}
+          <span class="dib absolute pr3 right-0 article-btn-arrow">
+            {{ svg src="assets/site/svg/button-arrow" color="{{
+            accent_color.value.0 }}" }}
+          </span>
+        </span>
+      </a>
+    </li>
+    {{ else }}
+    <li class="pl0 bb bw1 bc-gray-1">
+      <a
+        class="pv3 no-underline article-btn db w-100 relative"
+        href="{{ link to='/insights-archive' }}"
+      >
+        <span class="dib flex items-center justify-between pv2 pr6-l pr5">
+          View all insights
+          <span class="dib absolute pr3 right-0 article-btn-arrow">
+            {{ svg src="assets/site/svg/button-arrow" color="{{
+            accent_color.value.0 }}" }}
+          </span>
+        </span>
+      </a>
+    </li>
+    {{ /if }}
+  </ul>
+</section>

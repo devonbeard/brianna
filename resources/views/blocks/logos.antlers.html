@@ -1,0 +1,23 @@
+<section
+  class="{{ partial src='styles/padding_above' }} {{ partial src='styles/padding_below' }} {{ if !padding_above_columns }}pt5{{ /if }} {{ if !padding_below_columns }}pb6-ns pb4{{ /if }} ph4 ph5-ns {{ if background_color }}bg-{{ background_color.label | lower }}{{ /if }} {{ if text_color }}c-{{ text_color.label | lower }}{{ /if }}"
+>
+  <div class="mw9 center" id="{{ section_title | slugify }}">
+    <h2 id="{{ section_title | slugify }}" class="f5 f-alt mb4-ns mb3">
+      {{ section_title }}
+    </h2>
+
+    <section class="flex flex-wrap items-center justify-between-l nb4">
+      {{ logos }}
+      <div class="pr4 w-auto-ns w-33 mb4 mb0-l tc">
+        {{ if company_url}}<a
+          href="{{ company_url }}"
+          target="_blank"
+          rel="nofollow noreferrer"
+          class="{{ if text_color }}c-{{ text_color.label | lower }}{{ /if }} no-underline"
+          >{{ /if }} {{ company_logo | output }} {{ if company_url}}</a
+        >{{ /if }}
+      </div>
+      {{ /logos }}
+    </section>
+  </div>
+</section>

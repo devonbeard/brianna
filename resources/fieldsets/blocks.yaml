@@ -1,0 +1,986 @@
+title: Blocks
+fields:
+  -
+    handle: blocks
+    field:
+      collapse: true
+      sets:
+        columns:
+          display: Columns
+          fields:
+            -
+              handle: background_color
+              field: common.background_color
+            -
+              handle: text_color
+              field: common.text_color
+            -
+              handle: column_vertical_alignment
+              field: common.column_vertical_alignment
+            -
+              handle: swap_order_of_columns
+              field: common.swap_order_of_columns
+            -
+              handle: column_settings
+              field:
+                display: 'Column Settings'
+                type: section
+                icon: section
+                listable: hidden
+                instructions_position: above
+            -
+              handle: number_of_columns
+              field:
+                options:
+                  one: One
+                  two: Two
+                  three: Three
+                  four: Four
+                default: two
+                display: 'Number of Columns'
+                type: button_group
+                icon: button_group
+                width: 50
+                listable: hidden
+                instructions_position: above
+            -
+              handle: column_width
+              field:
+                options:
+                  full: '100'
+                  halves: '50 / 50'
+                  thirds: '33 / 33 / 33'
+                  seventy-thirty: '70 / 30'
+                  twentyfive-fifty: '25 / 50 / 25'
+                default: halves
+                display: 'Column Width'
+                type: select
+                icon: select
+                instructions: 'This will allow you to set different columns width based on what you need.'
+                width: 50
+                listable: hidden
+                instructions_position: above
+                multiple: false
+                clearable: false
+                searchable: true
+                taggable: false
+                push_tags: false
+                cast_booleans: false
+            -
+              handle: spacing_above_columns
+              field:
+                options:
+                  3: S
+                  4: M
+                  5: L
+                  6: XL
+                  7: XXL
+                multiple: false
+                max_items: 1
+                clearable: true
+                searchable: true
+                taggable: false
+                push_tags: false
+                cast_booleans: false
+                display: 'Spacing Above Columns'
+                type: select
+                icon: select
+                width: 50
+                listable: hidden
+                instructions_position: above
+            -
+              handle: spacing_below_columns
+              field:
+                options:
+                  3: S
+                  4: M
+                  5: L
+                  6: XL
+                  7: XXL
+                multiple: false
+                max_items: 1
+                clearable: true
+                searchable: true
+                taggable: false
+                push_tags: false
+                cast_booleans: false
+                display: 'Spacing Below Columns'
+                type: select
+                icon: select
+                width: 50
+                listable: hidden
+                instructions_position: above
+            -
+              handle: padding_above_columns
+              field:
+                options:
+                  3: S
+                  4: M
+                  5: L
+                  6: XL
+                  7: XXL
+                multiple: false
+                max_items: 1
+                clearable: true
+                searchable: true
+                taggable: false
+                push_tags: false
+                cast_booleans: false
+                display: 'Padding Above Columns'
+                type: select
+                icon: select
+                width: 50
+                listable: hidden
+                instructions_position: above
+            -
+              handle: padding_below_columns
+              field:
+                options:
+                  3: S
+                  4: M
+                  5: L
+                  6: XL
+                  7: XXL
+                multiple: false
+                max_items: 1
+                clearable: true
+                searchable: true
+                taggable: false
+                push_tags: false
+                cast_booleans: false
+                display: 'Padding Below Columns'
+                type: select
+                icon: select
+                width: 50
+                listable: hidden
+                instructions_position: above
+            -
+              handle: column_content
+              field:
+                display: 'Column Content'
+                type: section
+                icon: section
+                listable: hidden
+                instructions_position: above
+            -
+              handle: section_headline
+              field:
+                input_type: text
+                antlers: false
+                display: 'Section Headline'
+                type: text
+                icon: text
+                instructions: 'This allows you to have a section headline outside of the columns.'
+                listable: hidden
+            -
+              handle: section_headline_alignment
+              field:
+                options:
+                  left: Left
+                  center: Center
+                  right: Right
+                default: center
+                display: 'Section Headline Alignment'
+                type: button_group
+                icon: button_group
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+            -
+              handle: left_column
+              field: common.bard
+              config:
+                buttons:
+                  - h1
+                  - h2
+                  - h3
+                  - h4
+                  - h5
+                  - h6
+                  - bold
+                  - italic
+                  - unorderedlist
+                  - orderedlist
+                  - quote
+                  - anchor
+                display: 'Left Column'
+                if:
+                  number_of_columns: 'not one'
+            -
+              handle: middle_column
+              field: common.bard
+              config:
+                buttons:
+                  - h1
+                  - h2
+                  - h3
+                  - h4
+                  - h5
+                  - h6
+                  - bold
+                  - italic
+                  - unorderedlist
+                  - orderedlist
+                  - quote
+                  - anchor
+                display: 'Middle Column'
+                if:
+                  number_of_columns: 'equals three'
+            -
+              handle: right_column
+              field: common.bard
+              config:
+                display: 'Right Column'
+                if:
+                  number_of_columns: 'not one'
+            -
+              handle: column
+              field: common.bard
+              config:
+                buttons:
+                  - h1
+                  - h2
+                  - h3
+                  - h4
+                  - h5
+                  - h6
+                  - bold
+                  - italic
+                  - unorderedlist
+                  - orderedlist
+                  - quote
+                  - anchor
+                display: Column
+                if:
+                  number_of_columns: 'equals one'
+        cta_with_form:
+          display: 'CTA with Form'
+          fields:
+            -
+              handle: background_color
+              field: common.background_color
+            -
+              handle: text_color
+              field: common.text_color
+            -
+              handle: left_column
+              field: common.bard
+              config:
+                buttons:
+                  - h1
+                  - h2
+                  - h3
+                  - h4
+                  - h5
+                  - h6
+                  - bold
+                  - italic
+                  - unorderedlist
+                  - orderedlist
+                  - quote
+                  - anchor
+                display: 'Left Column'
+            -
+              handle: form_embed_code
+              field:
+                antlers: true
+                display: 'Form Embed Code'
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+        featured_case_study:
+          display: 'Featured Case Study'
+          fields:
+            -
+              handle: background_color
+              field: common.background_color
+            -
+              handle: text_color
+              field: common.text_color
+            -
+              handle: section_title
+              field:
+                input_type: text
+                antlers: false
+                display: 'Section Title'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+            -
+              handle: section_headline
+              field:
+                input_type: text
+                antlers: false
+                display: 'Section Headline'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+            -
+              handle: icon
+              field:
+                mode: list
+                container: assets
+                folder: content
+                restrict: false
+                allow_uploads: true
+                show_filename: true
+                max_files: 1
+                display: Icon
+                type: assets
+                icon: assets
+                listable: hidden
+                instructions_position: above
+            -
+              handle: description
+              field:
+                antlers: false
+                display: Description
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+            -
+              handle: insights
+              field:
+                collapse: false
+                sets:
+                  insight:
+                    display: Insight
+                    fields:
+                      -
+                        handle: headline
+                        field:
+                          input_type: text
+                          antlers: false
+                          display: Headline
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                      -
+                        handle: image
+                        field:
+                          mode: list
+                          container: assets
+                          folder: content
+                          restrict: false
+                          allow_uploads: true
+                          show_filename: true
+                          max_files: 1
+                          display: Image
+                          type: assets
+                          icon: assets
+                          listable: hidden
+                          instructions_position: above
+                      -
+                        handle: description
+                        field:
+                          input_type: text
+                          antlers: false
+                          display: Description
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                display: Insights
+                type: replicator
+                icon: replicator
+                listable: hidden
+                instructions_position: above
+            -
+              handle: button_text
+              field:
+                input_type: text
+                antlers: false
+                display: 'Button Text'
+                type: text
+                icon: text
+                width: 33
+                listable: hidden
+            -
+              handle: button_url
+              field:
+                display: 'Button URL'
+                type: link
+                icon: link
+                width: 66
+                listable: hidden
+            -
+              handle: button_theme
+              field:
+                placeholder: primary
+                options:
+                  primary: Primary
+                  secondary: Secondary
+                  tertiary: Tertiary
+                multiple: false
+                max_items: 1
+                clearable: false
+                searchable: true
+                taggable: false
+                push_tags: false
+                cast_booleans: false
+                display: 'Button Theme'
+                type: select
+                icon: select
+                width: 50
+                listable: hidden
+                instructions_position: above
+                default: primary
+            -
+              handle: button_horizontal_position
+              field:
+                options:
+                  left: Left
+                  center: Center
+                  right: Right
+                display: 'Button Horizontal Position'
+                type: button_group
+                icon: button_group
+                width: 50
+                listable: hidden
+            -
+              handle: open_in_new_window
+              field:
+                display: 'Open in new window?'
+                type: toggle
+                icon: toggle
+                listable: hidden
+                width: 50
+            -
+              handle: include_button_arrow
+              field:
+                default: false
+                display: 'Include Button Arrow?'
+                type: toggle
+                icon: toggle
+                width: 50
+                listable: hidden
+        full_width_cta:
+          display: 'Full Width CTA'
+          fields:
+            -
+              handle: background_color
+              field: common.background_color
+            -
+              handle: text_color
+              field: common.text_color
+            -
+              handle: background_image
+              field:
+                mode: list
+                container: assets
+                folder: content
+                restrict: false
+                allow_uploads: true
+                show_filename: true
+                max_files: 1
+                display: 'Background Image'
+                type: assets
+                icon: assets
+                listable: hidden
+            -
+              handle: content
+              field: common.bard
+              config:
+                buttons:
+                  - h1
+                  - h2
+                  - h3
+                  - h4
+                  - h5
+                  - h6
+                  - bold
+                  - italic
+                  - unorderedlist
+                  - orderedlist
+                  - quote
+                  - anchor
+        hero_leaderboard:
+          display: 'Hero Leaderboard'
+          fields:
+            -
+              handle: background_color
+              field: common.background_color
+            -
+              handle: text_color
+              field: common.text_color
+            -
+              handle: column_vertical_alignment
+              field: common.column_vertical_alignment
+            -
+              handle: swap_order_of_columns
+              field: common.swap_order_of_columns
+            -
+              handle: left_column
+              field: common.bard
+              config:
+                buttons:
+                  - h1
+                  - h2
+                  - h3
+                  - h4
+                  - h5
+                  - h6
+                  - bold
+                  - italic
+                  - unorderedlist
+                  - orderedlist
+                  - quote
+                  - anchor
+                  - image
+                display: 'Left Column'
+            -
+              handle: right_column
+              field: common.bard
+              config:
+                buttons:
+                  - h1
+                  - h2
+                  - h3
+                  - h4
+                  - h5
+                  - h6
+                  - bold
+                  - italic
+                  - unorderedlist
+                  - orderedlist
+                  - quote
+                  - anchor
+                  - image
+                display: 'Right Column'
+        icon_list:
+          display: 'Icon List'
+          fields:
+            -
+              handle: background_color
+              field: common.background_color
+            -
+              handle: text_color
+              field: common.text_color
+            -
+              handle: section_headline
+              field:
+                input_type: text
+                antlers: false
+                display: 'Section Headline'
+                type: text
+                icon: text
+                listable: hidden
+            -
+              handle: icon_block
+              field:
+                collapse: false
+                sets:
+                  content:
+                    display: Content
+                    fields:
+                      -
+                        handle: icon_horizontal
+                        field:
+                          default: false
+                          display: 'Icon Horizontal'
+                          type: toggle
+                          icon: toggle
+                          instructions: 'By default, icons stack on top of content. This will allow you to align the icon left of the content.'
+                          width: 50
+                          listable: hidden
+                      -
+                        handle: image
+                        field:
+                          mode: list
+                          container: assets
+                          folder: content/icons
+                          restrict: false
+                          allow_uploads: true
+                          show_filename: true
+                          max_files: 1
+                          display: Image
+                          type: assets
+                          icon: assets
+                          listable: hidden
+                          width: 50
+                      -
+                        handle: content
+                        field: common.bard
+                        config:
+                          buttons:
+                            - h1
+                            - h2
+                            - h3
+                            - h4
+                            - h5
+                            - h6
+                            - bold
+                            - italic
+                            - unorderedlist
+                            - orderedlist
+                            - quote
+                            - anchor
+                display: 'Icon Block'
+                type: replicator
+                icon: replicator
+                listable: hidden
+        logos:
+          display: Logos
+          fields:
+            -
+              handle: background_color
+              field: common.background_color
+            -
+              handle: text_color
+              field: common.text_color
+            -
+              handle: padding_above_columns
+              field: common.padding_above_columns
+            -
+              handle: padding_below_columns
+              field: common.padding_below_columns
+            -
+              handle: section_title
+              field:
+                placeholder: 'Featured On:'
+                input_type: text
+                antlers: false
+                display: 'Section Title'
+                type: text
+                icon: text
+                width: 50
+                listable: hidden
+            -
+              handle: logos_per_row
+              field:
+                options:
+                  4: Four
+                  6: Six
+                  8: Eight
+                default: '4'
+                display: 'Logos Per Row'
+                type: button_group
+                icon: button_group
+                instructions: 'How many logos per row would you like to have?'
+                width: 50
+                listable: hidden
+            -
+              handle: logos
+              field:
+                collapse: false
+                sets:
+                  logo:
+                    display: Logo
+                    fields:
+                      -
+                        handle: company_logo
+                        field:
+                          mode: list
+                          container: assets
+                          folder: content
+                          restrict: false
+                          allow_uploads: true
+                          show_filename: true
+                          max_files: 1
+                          display: 'Company Logo'
+                          type: assets
+                          icon: assets
+                          listable: hidden
+                      -
+                        handle: company_url
+                        field:
+                          display: 'Company URL'
+                          type: link
+                          icon: link
+                          listable: hidden
+                display: Logos
+                type: replicator
+                icon: replicator
+                listable: hidden
+        stats:
+          display: Stats
+          fields:
+            -
+              handle: background_color
+              field: common.background_color
+            -
+              handle: text_color
+              field: common.text_color
+            -
+              handle: section_headline
+              field:
+                input_type: text
+                antlers: false
+                display: 'Section Headline'
+                type: text
+                icon: text
+                listable: hidden
+            -
+              handle: stats
+              field:
+                collapse: false
+                sets:
+                  stat:
+                    display: Stat
+                    fields:
+                      -
+                        handle: stat_number
+                        field:
+                          input_type: text
+                          antlers: false
+                          display: 'Stat Number'
+                          type: text
+                          icon: text
+                          listable: hidden
+                      -
+                        handle: stat_description
+                        field:
+                          antlers: false
+                          display: 'Stat Description'
+                          type: textarea
+                          icon: textarea
+                          listable: hidden
+                display: Stats
+                type: replicator
+                icon: replicator
+                listable: hidden
+        team:
+          display: Team
+          fields:
+            -
+              handle: section_headline
+              field:
+                input_type: text
+                antlers: false
+                display: 'Section Headline'
+                type: text
+                icon: text
+                listable: hidden
+            -
+              handle: team_members
+              field:
+                collapse: false
+                sets:
+                  team_member:
+                    display: 'Team Member'
+                    fields:
+                      -
+                        handle: photo
+                        field:
+                          mode: list
+                          container: assets
+                          folder: content/team
+                          restrict: false
+                          allow_uploads: true
+                          show_filename: true
+                          max_files: 1
+                          display: Photo
+                          type: assets
+                          icon: assets
+                          listable: hidden
+                      -
+                        handle: name
+                        field:
+                          input_type: text
+                          antlers: false
+                          display: Name
+                          type: text
+                          icon: text
+                          listable: hidden
+                      -
+                        handle: title_or_role
+                        field:
+                          input_type: text
+                          antlers: false
+                          display: 'Title or Role'
+                          type: text
+                          icon: text
+                          listable: hidden
+                      -
+                        handle: description
+                        field:
+                          antlers: false
+                          display: Description
+                          type: textarea
+                          icon: textarea
+                          listable: hidden
+                      -
+                        handle: url
+                        field:
+                          display: URL
+                          type: link
+                          icon: link
+                          instructions: 'This could be linkedin, website, portfolio, etc.'
+                          listable: hidden
+                display: 'Team Members'
+                type: replicator
+                icon: replicator
+                listable: hidden
+        add_ons:
+          display: 'Add ons'
+          fields:
+            -
+              handle: background_color
+              field: common.background_color
+            -
+              handle: text_color
+              field: common.text_color
+            -
+              handle: image
+              field:
+                mode: list
+                container: assets
+                folder: content
+                restrict: false
+                allow_uploads: true
+                show_filename: true
+                max_files: 1
+                display: Image
+                type: assets
+                icon: assets
+                listable: hidden
+            -
+              handle: section_headline
+              field:
+                input_type: text
+                antlers: false
+                display: 'Section Headline'
+                type: text
+                icon: text
+                listable: hidden
+            -
+              handle: list
+              field:
+                display: List
+                type: list
+                icon: list
+                listable: hidden
+        featured_articles:
+          display: 'Featured Articles'
+          fields:
+            -
+              handle: section_headline
+              field:
+                input_type: text
+                antlers: false
+                display: 'Section Headline'
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+            -
+              handle: featured_articles
+              field:
+                max_items: 3
+                mode: default
+                create: true
+                collections:
+                  - insights
+                display: 'Featured Articles'
+                type: entries
+                icon: entries
+                listable: hidden
+                instructions_position: above
+            -
+              handle: featured_article_cta_section
+              field:
+                display: 'Featured Article CTA Section'
+                type: section
+                icon: section
+                listable: hidden
+                instructions_position: above
+            -
+              handle: background_color
+              field: common.background_color
+            -
+              handle: text_color
+              field: common.text_color
+            -
+              handle: image
+              field:
+                mode: list
+                container: assets
+                folder: content
+                restrict: false
+                allow_uploads: true
+                show_filename: true
+                max_files: 1
+                display: Image
+                type: assets
+                icon: assets
+                listable: hidden
+                instructions_position: above
+            -
+              handle: content
+              field: common.bard
+              config:
+                buttons:
+                  - h1
+                  - h2
+                  - h3
+                  - h4
+                  - h5
+                  - h6
+                  - bold
+                  - italic
+                  - unorderedlist
+                  - orderedlist
+                  - quote
+                  - anchor
+        all_articles:
+          display: 'All articles'
+          fields:
+            -
+              handle: collections
+              field:
+                max_items: 1
+                mode: default
+                display: Collections
+                type: collections
+                icon: collections
+                instructions: 'Which collection would you like to include in listing all articles from?'
+                listable: hidden
+                instructions_position: above
+        sticky_in_page_nav:
+          display: 'Sticky In-Page Nav'
+          fields:
+            -
+              handle: links
+              field:
+                collapse: false
+                sets:
+                  link:
+                    display: Link
+                    fields:
+                      -
+                        handle: text
+                        field:
+                          input_type: text
+                          antlers: false
+                          display: Text
+                          type: text
+                          icon: text
+                          listable: hidden
+                          instructions_position: above
+                      -
+                        handle: link
+                        field:
+                          display: Link
+                          type: link
+                          icon: link
+                          listable: hidden
+                          instructions_position: above
+                display: Links
+                type: replicator
+                icon: replicator
+                listable: hidden
+                instructions_position: above
+      display: Blocks
+      type: replicator
+      icon: replicator
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+      previews: true

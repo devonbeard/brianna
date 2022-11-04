@@ -1,0 +1,14 @@
+default:
+  titles_section: null
+  title_separator: '|'
+  site_name: 'Financial Advisor Web Design & Digital Strategy'
+  favicon_section: null
+  global_favicon: seo/favicon-v8.5.svg
+  knowledge_graph_section: null
+  company_or_person: company
+  target_name: 'Muir Edison'
+  company_logo: site/logo-1633543545.svg
+  breadcrumbs_section: null
+  enable_breadcrumbs: true
+  no_index_section: null
+  no_index_site: false

@@ -1,0 +1,21 @@
+<footer
+  class="mw9 center pv6-l pv5-m pv4 ph4 ph5-ns flex flex-wrap justify-between items-end"
+>
+  <nav
+    class="dn db-ns flex items-center justify-end-l justify-center mb0-l mb3"
+  >
+    {{ nav:footer_menu }}
+    <a
+      href="{{ url }}"
+      class="nav__link db f-alt c-black no-underline relative {{ if !last }}mr4 pr3{{ /if }} {{ if is_current || is_parent }}is-active{{ /if }}"
+      ><span class="dib">{{ title }}</span>
+    </a>
+    {{ /nav:footer_menu }}
+  </nav>
+
+  <div
+    class="flex flex-wrap items-center justify-end-l justify-center f-alt--r f6"
+  >
+    <p class="mb0-l mb2 content f6-ns f7">{{ site_globals:copyright }}</p>
+  </div>
+</footer>

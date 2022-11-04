@@ -1,0 +1,20 @@
+{{ if video | is_embeddable }}
+<!-- Youtube and Vimeo -->
+<div class="w-100 aspect-ratio aspect-ratio--16x9">
+  <iframe
+    src="{{ video | embed_url }}?enablejsapi=1"
+    class="aspect-ratio--object bn js-video-player"
+    allowfullscreen
+    allow="autoplay; fullscreen"
+  ></iframe>
+</div>
+{{ else }}
+<!-- Other HTML5 video types -->
+<div class="w-100 aspect-ratio aspect-ratio--16x9">
+  <video
+    src="{{ video | embed_url }}"
+    class="aspect-ratio--object bn js-video-player"
+    allow="autoplay; fullscreen"
+  ></video>
+</div>
+{{ /if }}

@@ -1,0 +1,13 @@
+<section
+  class="pa5-l pv5 ph4 mv5 flex-l items-center justify-between {{ if background_color }}bg-{{ background_color.label | lower }}{{ /if }} {{ if text_color }}c-{{ text_color.label | lower }}{{ /if }}"
+  style="
+    background-image: url('https://muiredison.test/assets/site/svg/muir-edison-cta-logo.svg');
+    background-repeat: no-repeat;
+    background-position: 37% bottom;
+  "
+>
+  <div class="w-50-l mb3 mb0-l tc tl-l">
+    <h2 class="mw6 center">{{ headline }}</h2>
+  </div>
+  <div class="w-50-l">{{ form_embed }}</div>
+</section>

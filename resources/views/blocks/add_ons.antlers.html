@@ -1,0 +1,24 @@
+<section
+  class="columns-block pt5 pb5 ph4 {{ if background_color }}bg-{{ background_color.label | lower }}{{ /if }} {{ if text_color }}c-{{ text_color.label | lower }}{{ /if }}"
+>
+  <div
+    class="mw9 center flex-ns items-center tc tl-ns justify-center justify-start-ns bt pt5 bc-secondary-2"
+  >
+    <div class="mr4 pr2 mb4 mb0-ns">
+      {{ if (image | extension) == 'svg' }} {{ image | output }} {{ else }} {{
+      responsive:image alt="{caption || alt}" loading="lazy" }} {{ /if }}
+    </div>
+    <div>
+      <h2 id="{{ section_headline | slugify }}" class="f5 f-alt mb3">
+        {{ section_headline }}
+      </h2>
+      <ul class="flex flex-wrap justify-center list ml0 pl0">
+        {{ list }}
+        <li class="pl0">
+          {{ value }} {{ if !last }}<span class="ph3">&bull;</span>{{/if }}
+        </li>
+        {{ /list }}
+      </ul>
+    </div>
+  </div>
+</section>

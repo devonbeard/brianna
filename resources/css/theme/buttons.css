@@ -1,0 +1,32 @@
+/**
+ * Buttons
+ *
+ *
+ */
+
+/**
+ * Button Defaults
+ *
+*/
+.btn {
+  display: inline-block;
+  outline: 0;
+}
+
+/**
+ * Button Outline
+ *
+ */
+.btn {
+  &--outline {
+    border: 1px solid;
+  }
+
+  &--outline--m {
+    border: 2px solid;
+  }
+
+  &--outline--l {
+    border: 3px solid;
+  }
+}

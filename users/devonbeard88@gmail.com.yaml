@@ -1,0 +1,11 @@
+name: 'Devon Beard'
+super: true
+id: bd153216-d5f9-4c8b-8d57-d966665b740d
+password_hash: $2y$10$gdL7LVTyLaor1gYZIJ/AuenNI.DJpFP7qmYSj9d9/rc0xbYCDYxmi
+preferences:
+  collections:
+    pages:
+      after_save: continue_editing
+  assets:
+    assets:
+      per_page: 100

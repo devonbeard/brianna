@@ -1,0 +1,71 @@
+/**
+ * Skins: Theme Color Variables
+ */
+:root {
+  --primary: #5f377a;
+
+  --secondary: #fdfcf8;
+  --secondary-2: #e5e2d3;
+
+  --peach: #f8ece5;
+  --light-brown: #6d5b57;
+  --brown: #543a34;
+
+  --accent-1: #00cb93;
+  --accent-2: #cb8900;
+  --accent-3: #cb00c1;
+  --accent-4: #57aeff;
+  --accent-5: #0100c6;
+  --accent-6: #2f2523;
+  --accent-7: #2d3b39;
+  --accent-8: #68307b;
+  --accent-9: #5d6773;
+  --accent-10: #a24848;
+  --accent-11: #487b3e;
+  --accent-12: #646239;
+  --accent-13: #543030;
+
+  --white: #ffffff;
+
+  --off-gray: #fdfcf8;
+  --gray-1: #dedede;
+  --gray-2: #aaa3a3;
+  --gray-3: #a3a3ad;
+  --gray-4: #666676;
+
+  --black: #000000;
+
+  --error: var(--accent-3);
+  --success: var(--accent-1);
+  --warning: var(--accent-2);
+}
+
+/*
+ * Color Themes
+ *
+ * Includes:
+ * Background Color, Border Color, Text Color, Text Hover colors
+*/
+/* prettier-ignore */
+@each $color in (primary, secondary, secondary-2, peach, light-brown, brown accent-1, accent-2, accent-3, accent-4, accent-5, accent-6, accent-7, accent-8, accent-9, accent-10, accent-11, accent-12, accent-13, white, off-gray, gray-1, gray-2, gray-3, gray-4, black, error, warning, success)
+{
+  .bg-$(color) {
+    background-color: var(--$(color));
+  }
+
+  .c-$(color) {
+    color: var(--$(color));
+  }
+
+  .bc-$(color) {
+    border-color: var(--$(color));
+  }
+
+  .hover-c-$(color):hover {
+    color: var(--$(color));
+  }
+
+  .hover-bg-$(color):hover {
+    background-color: var(--$(color));
+  }
+}

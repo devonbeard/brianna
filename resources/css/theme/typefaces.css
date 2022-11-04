@@ -1,0 +1,116 @@
+/**
+ * Typography:
+ *
+ *
+*/
+
+@font-face {
+  font-family: 'Noir';
+  src: url('/fonts/NOIRetBLANC.woff2') format('woff2'),
+    url('/fonts/NOIRetBLANC.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+    format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+    format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+/*
+ * Typeface Mixins
+ */
+@mixin font--main {
+  font-family: Inter, 'Avenir Next', 'helvetica neue', helvetica, ubuntu, roboto,
+    noto, 'segoe ui', arial, sans-serif;
+  font-weight: 300;
+}
+
+@mixin font--main-m {
+  font-family: 'Inter', 'Avenir Next', 'helvetica neue', helvetica, ubuntu,
+    roboto, noto, 'segoe ui', arial, sans-serif;
+  font-weight: 500;
+}
+
+@mixin font--headline {
+  font-family: 'Noir', 'Avenir Next', 'helvetica neue', helvetica, ubuntu,
+    roboto, noto, 'segoe ui', arial, sans-serif;
+  font-weight: 400;
+}
+
+/*
+ * Typeface Classes
+ */
+.f-alt {
+  @include font--headline();
+}
+
+.f-main {
+  @include font--main();
+}
+
+.f-main--m {
+  @include font--main-m();
+}
+
+@media (--breakpoint-not-small) {
+  .f-alt--ns {
+    @include font--headline();
+  }
+
+  .f-main--ns {
+    @include font--main();
+  }
+
+  .f-main--m--ns {
+    @include font--main-m();
+  }
+}
+
+@media (--breakpoint-medium) {
+  .f-alt--m {
+    @include font--headline();
+  }
+
+  .f-main--m {
+    @include font--main();
+  }
+
+  .f-main--m--m {
+    @include font--main-m();
+  }
+}
+
+@media (--breakpoint-large) {
+  .f-alt--l {
+    @include font--headline();
+  }
+
+  .f-main--l {
+    @include font--main();
+  }
+
+  .f-main--m--l {
+    @include font--main-m();
+  }
+}

@@ -1,0 +1,79 @@
+/* ::Generic Margin/Padding Reset */
+/* ------------------------------------------------------------ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+form,
+fieldset,
+legend,
+table,
+th,
+td,
+caption,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Give a help cursor to elements that give extra info on `:hover`.
+ */
+abbr[title],
+dfn[title] {
+  cursor: help;
+}
+
+/**
+ * Give form elements some cursor interactions...
+ */
+label,
+input,
+textarea,
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.fixed-header {
+  /* Adjustment for fixed nav height */
+  padding-top: 72px;
+  @media (--breakpoint-large) {
+    padding-top: 88px;
+  }
+}
+
+body.premium.fixed-header {
+  padding-top: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img,
+svg {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  outline: 0;
+}

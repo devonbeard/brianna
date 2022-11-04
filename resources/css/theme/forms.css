@@ -1,0 +1,226 @@
+/**
+ * Form Elements: Inputs Textarea, Select, etc.
+ *
+ *
+ */
+button {
+  background-color: transparent;
+  border: 0;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='textarea'],
+input[type='phone'] {
+  border: 2px solid var(--black);
+  border-radius: 100px;
+  padding: 2.125rem 2.5rem;
+  transition: 0.125s ease-in-out border;
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.input-secondary {
+  border: 2px solid var(--white) !important;
+  color: var(--white) !important;
+  background-color: transparent;
+}
+
+.input-secondary {
+  border: 2px solid var(--white) !important;
+  color: var(--white) !important;
+  background-color: transparent;
+}
+
+input[type='text']:focus,
+input[type='text']:hover,
+input[type='email']:focus,
+input[type='email']:hover,
+input[type='textarea']:focus,
+input[type='textarea']:hover,
+input[type='phone']:focus,
+input[type='phone']:hover {
+  border-color: var(--primary);
+  border-radius: 100px;
+  outline: none;
+}
+
+input[type='text'].has-error,
+input[type='email'].has-error,
+input[type='textarea'].has-error,
+input[type='phone'].has-error {
+  border-color: var(--error);
+}
+
+input[type='submit'],
+.input-submit {
+  background-color: inherit;
+  border: 0;
+  outline: 0;
+
+  background-color: var(--primary-1);
+  color: var(--white-1);
+  @extend .f-main--db;
+  @extend .br-pill;
+  @extend .ph4;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+
+  display: block;
+  max-width: 300px;
+  min-height: 40px;
+  margin: auto;
+
+  @media (--breakpoint-not-small) {
+    max-width: inherit;
+    display: inline-block;
+    margin-left: 1rem;
+  }
+}
+
+/*
+ * Stacked Styles for inputs
+ *
+*/
+.stacked-form {
+}
+
+.infusion-field label {
+  position: fixed !important;
+  _position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.stacked-form input[type='text'],
+.stacked-form input[type='email'],
+.stacked-form input[type='textarea'],
+.stacked-form input[type='phone'],
+.stacked-form input:-webkit-autofill,
+.stacked-form input:-webkit-autofill:focus {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #71478d;
+  border-radius: 0;
+  padding: 24px 0;
+  transition: 0.125s ease-in-out border;
+  width: 100%;
+  display: block;
+  margin-bottom: 0;
+
+  /* chrome autofill color change fix */
+  -webkit-box-shadow:0 0 0 50px transparent inset; 
+
+  /* @media (--breakpoint-not-small) {
+    display: inline-block;
+    max-width: 280px;
+  } */
+}
+
+.stacked-form input[type='submit'], 
+.stacked-form .infusion-submit button {
+  @extend .br-pill;
+  @extend .btn;
+  @extend .btn-primary;
+  @extend .btn-secondary;
+  margin-top: 2rem;
+}
+
+.stacked-form {
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--white);
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: var(--white);
+  }
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--white);
+  }
+}
+
+.stacked-form.light-mode {
+}
+
+.stacked-form.light-mode input[type='text'],
+.stacked-form.light-mode input[type='email'],
+.stacked-form.light-mode input[type='textarea'],
+.stacked-form.light-mode input[type='phone'] {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #71478d;
+  border-radius: 0;
+  padding: 24px 0;
+  transition: 0.125s ease-in-out border;
+  width: 100%;
+  display: block;
+  margin-bottom: 0;
+
+  /* @media (--breakpoint-not-small) {
+    display: inline-block;
+    max-width: 280px;
+  } */
+}
+
+.stacked-form.light-mode input[type='submit'] {
+  @extend .br-pill;
+  @extend .btn;
+  @extend .btn-primary;
+  margin-top: 2rem;
+}
+
+.stacked-form.light-mode {
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--black);
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: var(--black);
+  }
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--black);
+  }
+}
+
+/*
+ * Placeholder Styles for inputs
+ *
+*/
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--black);
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--black);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--black);
+}
+
+.input-secondary::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--white);
+}
+
+.input-secondary:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--white);
+}
+
+.input-secondary::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--white);
+}

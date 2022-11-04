@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ site:short_locale }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {{ seo_pro:meta }} {{ partial:preload-fonts }}
+    <link rel="stylesheet" href="{{ mix src='css/site.css' }}" />
+    <link rel="shortcut icon" href="/assets/seo/favicon-v8.5.svg" />
+    {{ tracking_code_manager:head }}
+  </head>
+  <body class="f-main f4 lh-copy bg-peach c-light-brown">
+    {{ tracking_code_manager:body }}
+
+    <!-- header -->
+    {{ partial:header }}
+    <!-- /header -->
+
+    <main>{{ template_content }}</main>
+
+    <!-- footer -->
+    {{ partial:footer }}
+    <!-- /footer -->
+
+    <script src="{{ mix src='/js/site.js' }}"></script>
+
+    {{ tracking_code_manager:footer }}
+  </body>
+</html>

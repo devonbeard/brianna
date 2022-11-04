@@ -1,0 +1,51 @@
+<section
+  class="pt6-l pt5 ph4 ph5-ns {{ if background_color }}bg-{{ background_color.label | lower }}{{ /if }} {{ if text_color }}c-{{ text_color.label | lower }}{{ /if }}"
+>
+  <div class="mw9 center pt5">
+    <div class="mb5-ns mb4">
+      <h2 id="{{ section_headline | slugify }}" class="f2 content">
+        {{ section_title }} - {{ section_headline }}
+      </h2>
+    </div>
+    <div class="f1-ns f2 f-alt mw7 lh-copy mb5 pb4">{{ description }}</div>
+
+    <div class="flex flex-wrap justify-between mb5">
+      <div class="w-60-l w-70-m pr4-m mb4 mb0-ns">
+        <div class="w-90-l pr5-l">
+          {{ content }} {{ partial src="sets/{type}" }} {{ /content }}
+        </div>
+      </div>
+
+      <div class="w-40-l w-30-m">
+        <h3>{{ client_needs_title }}</h3>
+        <ul class="list pl0 ml0 flex flex-wrap justify-between">
+          {{ client_needs }}
+          <li class="pl0 w-50 w-100-m">{{ title }}</li>
+          {{ /client_needs }}
+        </ul>
+      </div>
+    </div>
+
+    <div class="">
+      <h2 class="mb4 pb3">{{ achievements_headline }}</h2>
+
+      <div class="flex flex-wrap nl3 nr3">
+        {{ results_and_achivements }}
+        <div
+          class="c-white pv5-ns pv4 ph4 w-25-l w-50-m w-100 center mh2-l mh3-m flex items-center justify-center justify-start-ns tc tl-ns mb4 f-alt"
+          style="background-color: {{ bg_color.value.0 }}; max-width: 280px;"
+        >
+          <div>
+            <div class="mw2 mb2">
+              {{ if (icon | extension) == 'svg' }} {{ icon | output }} {{ else
+              }} {{ responsive:icon alt="{caption || alt}" loading="lazy" }} {{
+              /if }}
+            </div>
+            {{ content }}
+          </div>
+        </div>
+        {{ /results_and_achivements }}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,10 @@
+<section
+  class="full-width-cta tc flex items-center justify-center pv6-l pv4 ph5-ns ph3 {{ if background_color }}bg-{{ background_color.label | lower }}{{ /if }} {{ if text_color }}c-{{ text_color.label | lower }}{{ /if }} {{ if background_image }}cover{{ /if }}"
+  {{ if background_image }}
+  style="background-image: url({{ background_image }}); background-position: center;"
+  {{ /if }}
+>
+  <div class="mw7 center">
+    {{ content }} {{ partial src="sets/{type}" }} {{ /content }}
+  </div>
+</section>

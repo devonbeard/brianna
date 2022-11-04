@@ -1,0 +1,19 @@
+/*
+
+   IMAGES
+   Docs: http://tachyons.io/docs/elements/images/
+
+*/
+
+/* Responsive images! */
+
+picture {
+  display: block;
+  width: 100%;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}

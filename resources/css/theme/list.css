@@ -1,0 +1,58 @@
+.content ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  max-width: 500px;
+}
+
+.content ul li {
+  position: relative;
+  margin-left: -0.75rem;
+}
+
+.content ul li::before {
+  content: '';
+  background-color: #e2e0d5;
+  display: inline-block;
+  min-width: 7px;
+  height: 7px;
+  margin-right: 12px;
+  position: absolute;
+  top: 12px;
+  left: 0;
+}
+
+.content li > ul {
+  margin-left: 1.5px;
+  margin-top: 1rem;
+}
+
+.content li {
+  margin-bottom: 1rem;
+}
+
+.content li p {
+  margin-bottom: 0;
+}
+
+ul.list li {
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+ul.list li::before {
+  display: none;
+  margin-left: 0;
+}
+
+.articles-list {
+  max-width: 492px;
+}
+
+.articles-list ul {
+  max-width: 100%;
+}
+
+.stat-list {
+  border: 2px solid var(--secondary-2);
+}

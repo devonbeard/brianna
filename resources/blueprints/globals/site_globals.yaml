@@ -1,0 +1,35 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: header_and_navigation
+        field:
+          display: 'Header & Navigation'
+          type: section
+          icon: section
+          listable: hidden
+      -
+        handle: site_logo
+        field:
+          mode: list
+          container: assets
+          folder: site
+          restrict: true
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: 'Site Logo'
+          type: assets
+          icon: assets
+          listable: hidden
+      -
+        handle: copyright
+        field:
+          input_type: text
+          antlers: true
+          display: Copyright
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above

@@ -1,0 +1,108 @@
+/* Variables */
+:root {
+  --font-size-extra-small: 0.9375rem; /* 15px */
+  --font-size-small: 1.125rem; /* 18px */
+  --font-size-medium: 1.25rem; /* 20px */
+  --font-size-large: 1.5rem; /* 24px */
+  --font-size-extra-large: 2rem; /* 32px */
+  --font-size-extra-extra-large: 4rem; /* 64px */
+  --font-size-xxx-large: 3rem; /* 100px */
+}
+
+/* Type Scale */
+.f-headline {
+  font-size: var(--font-size-xxx-large);
+}
+.f1 {
+  font-size: var(--font-size-extra-extra-large);
+}
+.f2 {
+  font-size: var(--font-size-extra-large);
+}
+.f3 {
+  font-size: var(--font-size-large);
+}
+.f4 {
+  font-size: var(--font-size-medium);
+}
+.f5 {
+  font-size: var(--font-size-small);
+}
+.f6 {
+  font-size: var(--font-size-extra-small);
+}
+
+@media (--breakpoint-not-small) {
+  /* Type Scale */
+  .f-headline-ns {
+    font-size: var(--font-size-xxx-large);
+  }
+  .f1-ns {
+    font-size: var(--font-size-extra-extra-large);
+  }
+  .f2-ns {
+    font-size: var(--font-size-extra-large);
+  }
+  .f3-ns {
+    font-size: var(--font-size-large);
+  }
+  .f4-ns {
+    font-size: var(--font-size-medium);
+  }
+  .f5-ns {
+    font-size: var(--font-size-small);
+  }
+  .f6-ns {
+    font-size: var(--font-size-extra-small);
+  }
+}
+
+@media (--breakpoint-medium) {
+  /* Type Scale */
+  .f-headline-m {
+    font-size: var(--font-size-xxx-large);
+  }
+  .f1-m {
+    font-size: var(--font-size-extra-extra-large);
+  }
+  .f2-m {
+    font-size: var(--font-size-extra-large);
+  }
+  .f3-m {
+    font-size: var(--font-size-large);
+  }
+  .f4-m {
+    font-size: var(--font-size-medium);
+  }
+  .f5-m {
+    font-size: var(--font-size-small);
+  }
+  .f6-m {
+    font-size: var(--font-size-extra-small);
+  }
+}
+
+@media (--breakpoint-large) {
+  /* Type Scale */
+  .f-headline-l {
+    font-size: var(--font-size-xxx-large);
+  }
+  .f1-l {
+    font-size: var(--font-size-extra-extra-large);
+  }
+  .f2-l {
+    font-size: var(--font-size-extra-large);
+  }
+  .f3-l {
+    font-size: var(--font-size-large);
+  }
+  .f4-l {
+    font-size: var(--font-size-medium);
+  }
+  .f5-l {
+    font-size: var(--font-size-small);
+  }
+  .f6-l {
+    font-size: var(--font-size-extra-small);
+  }
+}

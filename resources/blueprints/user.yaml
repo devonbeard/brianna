@@ -1,0 +1,62 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: name
+        field:
+          type: text
+          display: Name
+      -
+        handle: email
+        field:
+          type: text
+          input: email
+          display: 'Email Address'
+      -
+        handle: roles
+        field:
+          type: user_roles
+          width: 50
+      -
+        handle: groups
+        field:
+          type: user_groups
+          width: 50
+      -
+        handle: avatar
+        field:
+          type: assets
+          max_files: 1
+          container: assets
+      -
+        handle: bio
+        field:
+          always_show_set_button: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          display: Bio
+          type: bard
+          icon: bard
+          listable: hidden
+          instructions_position: above

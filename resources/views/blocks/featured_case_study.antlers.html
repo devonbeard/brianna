@@ -1,0 +1,34 @@
+<section
+  class="pv6-l pt5 pb5 ph4 {{ if background_color }}bg-{{ background_color.label | lower }}{{ /if }} {{ if text_color }}c-{{ text_color.label | lower }}{{ /if }}"
+>
+  <div class="mw9 center">
+    <div class="mb5-ns mb4">
+      <h2 id="{{ section_headline | slugify }}" class="f5 mb3">
+        {{ section_title }}
+      </h2>
+      <h3 class="f2">{{ section_headline}}</h3>
+
+      <div class="mt4-ns mt3">{{ svg src="assets/site/svg/dotted-line" }}</div>
+    </div>
+    <div class="mb2">
+      {{ if (icon | extension) == 'svg' }} {{ icon | output }} {{ else }} {{
+      responsive:icon alt="{caption || alt}" loading="lazy" }} {{ /if }}
+    </div>
+    <div class="f1-ns f2 f-alt mw7 lh-copy mb5 pb4">{{ description }}</div>
+
+    <div class="flex flex-wrap justify-between nl4-l">
+      {{ insights }}
+      <div class="w-30-l w-100 {{ if !last }}mb5{{ /if }} mb0-l">
+        <h4 class="f5 mb4 pb3 f-alt tc w-100">{{ headline }}</h4>
+        <div class="mb4 pb3 w-100 tc">
+          {{ if (image | extension) == 'svg' }} {{ image | output }} {{ else }}
+          {{ responsive:image alt="{caption || alt}" loading="lazy" }} {{ /if }}
+        </div>
+        <p class="f-alt--l f-headline-ns f1 tc w-100">{{ description }}</p>
+      </div>
+      {{ /insights }}
+    </div>
+
+    <div class="button-block tc tl-ns">{{ partial src="sets/button" }}</div>
+  </div>
+</section>

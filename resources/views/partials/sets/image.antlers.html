@@ -1,0 +1,10 @@
+<div
+  class="{{ if image_alignment == 'center' }}tc{{ elseif image_alignment == 'right' }}tr{{ else }}tl{{ /if }} {{ if animate_image }}js-animate-img o-0 animate-delay-{{ animation_speed:value }}{{ /if }}"
+>
+  {{ if image_link }}
+  <a class="no-underline" href="{{ image_link ">
+    {{ /if }} {{ responsive:image alt="{caption || alt}" loading="lazy"
+    class="{{ if include_shadow }}shadow-1{{ /if }}" }} {{ if image_link }}
+  </a>
+  {{ /if }}
+</div>

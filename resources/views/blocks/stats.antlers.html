@@ -1,0 +1,17 @@
+<section
+  class="pv6-l pv4 ph5-ns ph3 {{ if background_color }}bg-{{ background_color.label | lower }}{{ /if }} {{ if text_color }}c-{{ text_color.label | lower }}{{ /if }}"
+>
+  {{ partial:section_headline }}
+  <div
+    class="mw9 center flex-l flex-wrap justify-between {{ if column_vertical_alignment }}{{ if column_vertical_alignment == 'middle' }}items-center{{ /if}}{{ if column_vertical_alignment == 'bottom' }}items-end{{ /if}}{{ /if}}"
+  >
+    {{ stats }}
+    <div class="w-33-l stat-list flex items-center ph4 pv5 mb4">
+      <div>
+        <h2 class="mb0 f1 f-alt">{{ stat_number }}</h2>
+        <h3 class="f4 mw5">{{ stat_description }}</h3>
+      </div>
+    </div>
+    {{ /stats }}
+  </div>
+</section>

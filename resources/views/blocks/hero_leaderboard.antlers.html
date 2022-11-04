@@ -1,0 +1,20 @@
+<section
+  class="pv4 ph4 ph5-ns {{ if background_color }}bg-{{ background_color.label | lower }}{{ /if }} {{ if text_color }}c-{{ text_color.label | lower }}{{ /if }}"
+  style=""
+>
+  {{ background_color }}
+  <div
+    class="mw9 center flex-l flex-wrap justify-between {{ if column_vertical_alignment }}{{ if column_vertical_alignment == 'middle' }}items-center{{ /if}}{{ if column_vertical_alignment == 'bottom' }}items-end{{ /if}}{{ /if}}"
+  >
+    <div
+      class="w-50-l mw7-l center content mb5 {{ if swap_order_of_columns }}order-1-ns{{ /if }}"
+    >
+      {{ left_column }} {{ partial src="sets/{type}" }} {{ /left_column }}
+    </div>
+    <div
+      class="w-50-l mw7-l pl5-l center content {{ if swap_order_of_columns }}order-0-ns{{ /if }}"
+    >
+      {{ right_column }} {{ partial src="sets/{type}" }} {{ /right_column }}
+    </div>
+  </div>
+</section>

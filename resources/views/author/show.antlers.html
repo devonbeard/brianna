@@ -1,0 +1,31 @@
+<section class="bg-secondary pv4 ph4 nb4">
+  <div class="tc mb5 pb4">
+    <h1 class="mw7 center">All Articles by {{author | deslugify | title }}</h1>
+  </div>
+
+  <div class="flex flex-wrap mw9 center">
+    {{ collection:insights conditions="author:{author}" }}
+    <div class="flex mh3-ns mb4 w-30-l">
+      <a
+        class="pv3 no-underline article-btn db w-100 relative c-black bg-white ba bc-secondary-2 bw2 ph4 pv5"
+        href="{{ url }}"
+      >
+        <div class="article-featured-img mb4">
+          {{ partial src="sets/image" }}
+        </div>
+
+        <h2 class="mb2 w-80-l">{{ title }}</h2>
+        <p class="mb4 w-80-l">{{ excerpt }}</p>
+
+        <button class="br-pill inline-flex items-center btn btn-primary">
+          Learn more
+
+          <span class="pl3 relative" style="top: -2px">
+            {{ svg src="assets/site/svg/button-arrow" }}
+          </span>
+        </button>
+      </a>
+    </div>
+    {{ /collection:insights }}
+  </div>
+</section>

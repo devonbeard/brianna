@@ -1,0 +1,87 @@
+<section class="bg-secondary pv4 ph4-ns ph3 nb4" id="{{ title | slugify }}">
+  <div class="tc mb5 pb4">
+    <h1 class="mw7 center">{{ title }}</h1>
+  </div>
+
+  <div class="mw9 center">
+    {{ collection from="{collections|piped}" limit="10" paginate="true"
+    as="posts" }}
+    <div class="w-100 flex flex-wrap justify-between">
+      {{ posts }}
+      <div class="flex mh3-ns mb4 w-30-l">
+        <a
+          class="pv3 no-underline article-btn db w-100 relative c-black bg-white ba bc-secondary-2 bw2 ph4 pv5"
+          href="{{ url }}"
+        >
+          <div class="article-featured-img mb4">
+            {{ partial src="sets/image" }}
+          </div>
+
+          <h2 class="mb2 w-80-l">{{ title }}</h2>
+          <p class="mb4 w-80-l">{{ excerpt }}</p>
+
+          <button class="br-pill inline-flex items-center btn btn-primary">
+            Learn more
+
+            <span class="pl3 relative" style="top: -2px">
+              {{ svg src="assets/site/svg/button-arrow" }}
+            </span>
+          </button>
+        </a>
+      </div>
+      {{ /posts }}
+    </div>
+    <div class="w-100 tc pv4">
+      {{ paginate }}
+      <a class="c-black mh3" href="{{ prev_page }}"
+        ><svg
+          class="mr2"
+          style="transform: rotate(-180deg)"
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="15"
+          viewBox="0 0 28 15"
+        >
+          <title>Group 5 Copy 21</title>
+          <g
+            fill="none"
+            fill-rule="evenodd"
+            stroke="currentCOlor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          >
+            <path d="M1 7.836h25.568M20.803 1.836l6 6-6 6" />
+          </g>
+        </svg>
+        Previous</a
+      >
+
+      {{ current_page }} of {{ total_pages }} pages
+
+      <a class="c-black mh3" href="{{ next_page }}"
+        >Next
+        <svg
+          class="ml2"
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="15"
+          viewBox="0 0 28 15"
+        >
+          <title>Group 5 Copy 21</title>
+          <g
+            fill="none"
+            fill-rule="evenodd"
+            stroke="currentCOlor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          >
+            <path d="M1 7.836h25.568M20.803 1.836l6 6-6 6" />
+          </g></svg
+      ></a>
+      {{ /paginate }}
+    </div>
+    {{ /collection }}
+  </div>
+</section>

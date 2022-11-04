@@ -1,0 +1,23 @@
+<section
+  class="pv6-l pv4 ph5-ns ph3 {{ if background_color }}bg-{{ background_color.label | lower }}{{ /if }} {{ if text_color }}c-{{ text_color.label | lower }}{{ /if }}"
+  style="
+    background-image: url('https://muiredison.test/assets/site/svg/muir-edison-cta-logo.svg');
+    background-repeat: no-repeat;
+    background-position: 5% 113%;
+  "
+>
+  <div
+    class="mw9 center flex-l flex-wrap justify-between {{ if column_vertical_alignment }}{{ if column_vertical_alignment == 'middle' }}items-center{{ /if}}{{ if column_vertical_alignment == 'bottom' }}items-end{{ /if}}{{ /if}}"
+  >
+    <div
+      class="w-50-l mw7-l pr4-l center content mb2 {{ if swap_order_of_columns }}order-1-ns{{ /if }}"
+    >
+      {{ left_column }} {{ partial src="sets/{type}" }} {{ /left_column }}
+    </div>
+    <div
+      class="w-50-l mw7-l center content {{ if swap_order_of_columns }}order-0-ns{{ /if }}"
+    >
+      {{ form_embed_code }}
+    </div>
+  </div>
+</section>
