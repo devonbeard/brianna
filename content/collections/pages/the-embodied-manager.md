@@ -25,7 +25,7 @@ blocks:
         content:
           -
             type: text
-            text: '01. The Embodied Manager'
+            text: '02. THE EMBODIED MANAGER'
       -
         type: paragraph
         attrs:
@@ -583,5 +583,5 @@ blocks:
           class: null
 parent: ac915086-2ff0-496b-b734-b7d073d4e587
 updated_by: bd153216-d5f9-4c8b-8d57-d966665b740d
-updated_at: 1667591142
+updated_at: 1667591158
 ---
