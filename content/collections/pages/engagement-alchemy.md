@@ -9,9 +9,9 @@ blocks:
       value:
         - '#F8ECE5'
     text_color:
-      label: Brown
+      label: 'Light Brown'
       value:
-        - '#543A34'
+        - '#6d5b57'
     swap_order_of_columns: false
     left_column:
       -
@@ -162,6 +162,16 @@ blocks:
                     text: 'Investment: $4166/month per participant'
     type: columns
     enabled: true
+    background_color:
+      label: Black
+      value:
+        - '#222222'
+    text_color:
+      label: White
+      value:
+        - '#ffffff'
+    spacing_above_columns: '7'
+    padding_above_columns: '7'
   -
     swap_order_of_columns: false
     number_of_columns: one
@@ -583,5 +593,5 @@ blocks:
           class: null
 parent: ac915086-2ff0-496b-b734-b7d073d4e587
 updated_by: bd153216-d5f9-4c8b-8d57-d966665b740d
-updated_at: 1667591341
+updated_at: 1667591545
 ---
