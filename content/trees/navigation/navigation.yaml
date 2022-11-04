@@ -3,23 +3,6 @@ tree:
     id: 083cd0d2-b513-450c-81ba-7e36dced04a9
     title: Services
     url: '#'
-    children:
-      -
-        id: 61472894-4739-4a34-b1e9-7778b737ca73
-        title: 'Diagnostic + Research + Strategic Plans'
-        url: '/#diagnostic-research-strategic-plans'
-      -
-        id: 50e0d17d-bc55-4c92-9fab-bf1366bd73aa
-        title: 'Branding + Stationary + Collateral'
-        url: '/#branding-stationary-collateral'
-      -
-        id: bbaf6f5d-0bc9-4c30-a321-638121353994
-        title: 'Web Design, SEO, & Digital Strategy'
-        url: /financial-advisor-web-design
-      -
-        id: 63d976ad-de25-497d-8b97-a7195bc7777e
-        title: 'Executive Presence'
-        url: '/#executive-presence'
   -
     id: 14e67cc8-6ae8-4252-8eed-67f556f83360
     title: 'Our Work'
@@ -32,3 +15,7 @@ tree:
     id: cb0828c5-6c8c-41d8-8418-7e730883fbf2
     title: Contact
     url: /contact
+  -
+    id: 3b4e5abb-251b-4ad2-8025-eb38868712fa
+    title: '01. The Evolved Executive'
+    url: 'entry::31d8538c-f7a8-4453-b84c-4ff46a54436b'
