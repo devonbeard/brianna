@@ -5,6 +5,7 @@ title: Home
 template: page-builder
 blocks:
   -
+    id: 4YIQb4RO
     background_color:
       label: Peach
       value:
@@ -21,6 +22,7 @@ blocks:
       -
         type: set
         attrs:
+          id: XaIPwuMm
           values:
             type: image
             image: content/eye.png
@@ -55,6 +57,7 @@ blocks:
       -
         type: set
         attrs:
+          id: SZXTZnOK
           values:
             type: button
             button_text: 'Get Started'
@@ -62,10 +65,35 @@ blocks:
             button_theme: secondary
             open_in_new_window: false
             include_button_arrow: true
+      -
+        type: set
+        attrs:
+          id: la65cpni
+          values:
+            type: button
+            button_text: Test
+            button_theme: primary
+            open_in_new_window: false
+            include_button_arrow: false
+      -
+        type: set
+        attrs:
+          id: la65cu6w
+          values:
+            type: button
+            button_text: Test
+            button_theme: tertiary
+            open_in_new_window: false
+            include_button_arrow: false
+      -
+        type: paragraph
+        attrs:
+          class: null
     right_column:
       -
         type: set
         attrs:
+          id: EtszYR6f
           values:
             type: image
             image: content/bri-hero.webp
@@ -74,6 +102,7 @@ blocks:
             animate_image: true
             animation_speed: fast
   -
+    id: lWOLOouw
     dark_mode: false
     type: columns
     enabled: true
@@ -92,6 +121,7 @@ blocks:
       -
         type: set
         attrs:
+          id: nh3uxyoi
           values:
             type: image
             image: content/moth.png
@@ -102,6 +132,7 @@ blocks:
       -
         type: set
         attrs:
+          id: GYVhk6yL
           values:
             type: blockquote
             quote: '“Great leaders are brave enough to ask, “Is the way we work serving us? Is there a better way?”'
@@ -110,6 +141,7 @@ blocks:
             quote_author: '- Brianna Brown'
     section_headline_alignment: center
   -
+    id: fw3JEi3y
     swap_order_of_columns: false
     number_of_columns: two
     column_width: thirds
@@ -137,6 +169,7 @@ blocks:
     enabled: true
     section_headline_alignment: center
   -
+    id: EhEf43KA
     text_color:
       label: Brown
       value:
@@ -350,6 +383,7 @@ blocks:
     enabled: true
     section_headline_alignment: center
   -
+    id: 4N8DeD09
     text_color:
       label: Brown
       value:
@@ -367,6 +401,7 @@ blocks:
       -
         type: set
         attrs:
+          id: u9bDVJdG
           values:
             type: image
             image: content/briana-featured.webp
@@ -413,6 +448,7 @@ blocks:
             type: text
             text: 'Since launching Holistic Solutions in 2020, she’s helped hundreds of people around the globe to move away from living on autopilot and within survival mode in order to embrace a life of joy, alignment, and authenticity. She is now ready to bring that same passion for evolution into cultural organization.'
   -
+    id: UyNhJsfA
     swap_order_of_columns: false
     number_of_columns: one
     column_width: full
@@ -435,6 +471,7 @@ blocks:
       -
         type: set
         attrs:
+          id: xXhhmBQz
           values:
             type: button
             button_text: 'Join the waitlist'
@@ -458,7 +495,7 @@ override_twitter_settings: false
 override_twitter_card_settings: false
 twitter_card_type_page: summary
 updated_by: bd153216-d5f9-4c8b-8d57-d966665b740d
-updated_at: 1667526955
+updated_at: 1667787067
 meta_title: 'Financial Advisor (RIA) Expertise, Web Design, Digital, Strategy'
 meta_description: 'Expertise Accelerator, Web, Digital, and Strategic Growth Platforms for midsize financial advisor (RIA) firms ($50M - $3B AUM).'
 og_image: seo/muir-edison-financial-advisors-v8.7.webp
