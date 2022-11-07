@@ -93,9 +93,9 @@ blocks:
       value:
         - '#F8ECE5'
     text_color:
-      label: Brown
+      label: 'Light Brown'
       value:
-        - '#543A34'
+        - '#6d5b57'
     column:
       -
         type: set
@@ -474,7 +474,7 @@ override_twitter_settings: false
 override_twitter_card_settings: false
 twitter_card_type_page: summary
 updated_by: bd153216-d5f9-4c8b-8d57-d966665b740d
-updated_at: 1667788712
+updated_at: 1667788719
 meta_title: 'Financial Advisor (RIA) Expertise, Web Design, Digital, Strategy'
 meta_description: 'Expertise Accelerator, Web, Digital, and Strategic Growth Platforms for midsize financial advisor (RIA) firms ($50M - $3B AUM).'
 og_image: seo/muir-edison-financial-advisors-v8.7.webp
