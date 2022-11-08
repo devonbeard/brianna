@@ -1,8 +1,8 @@
-<section class="bg-secondary pv4">
+<section class="pt4">
   <div class="tc">
     <h1 class="mb4-l mb3 mw7 center">{{ title }}</h1>
 
-    <div class="flex-l justify-center mb5 pb3">
+    <div class="flex-l justify-center pb4">
       {{ author }}
       <p class="f-alt f5-l f6">
         By
@@ -19,52 +19,28 @@
     </div>
   </div>
 
-  <div class="flex-l justify-between mw8 center mb5 ph4 ph0-l">
-    <div class="w-50 w-100 mb5 mb0-l justify-center">
-      {{ partial src="sets/image" }}
-    </div>
-
-    <section class="articles-list w-50 w-100">
-      <div class="flex items-center bb bw1 bc-gray-1 pb4">
-        <h3 class="pb0">Jump to a Section</h3>
-      </div>
-      <ol class="list pl0 ml0">
-        {{ toc field="content"}}
-        <li class="pl0 bb bw1 bc-gray-1">
-          <a
-            class="c-black no-underline article-btn pv1 db w-100 f5"
-            href="#{{ toc_id }}"
-          >
-            <span class="dib flex justify-between pv1">
-              {{ toc_title }}
-              <span class="dib relative pr3">
-                {{ svg src="assets/site/svg/button-arrow" class="c-accent-2" }}
-              </span>
-            </span>
-          </a>
-        </li>
-        {{ /toc }}
-      </ol>
-    </section>
+  <div class="flex-l justify-center mw8 center ph4 ph0-l">
+    {{ partial src="sets/image" }}
   </div>
 </section>
 
-<div class="mw7 center cf pv5 pv6-l ph4 ph0-l">
-  <div class="post-content content">
+<div class="mw7 center cf pv5 ph4 ph0-l">
+  <div class="content">
     {{ content }} {{ partial src="sets/{type}" }} {{ /content }}
   </div>
 
-  <div class="flex-ns items-start mt4 pt5">
+  <div class="flex-ns items-center mt4 pt5">
     {{ author }}
-    <a class="c-black" href="/author/{{ name | slugify }}">
+    <a class="c-black flex" href="/author/{{ name | slugify }}">
       <img
-        class="br-pill mw3 mr3 mt2 mb2"
+        class="br-pill mr3 mt2 mb2"
         src="{{ avatar }}"
         alt="Avatar of {{ name }}"
+        style="height: 54px; width: 54px"
       />
     </a>
     <div class="">
-      <p class="f5 mb0 f-main--m">
+      <p class="f5 mb0 f-alt">
         <a class="c-black" href="/author/{{ name | slugify }}"> {{ name }} </a>
       </p>
       <div class="f5 mw6">{{ bio }}</div>
@@ -73,42 +49,30 @@
   </div>
 </div>
 
-<div>
-  {{ site_globals:blocks }} {{ partial src="blocks/{type}" }} {{
-  /site_globals:blocks }}
-</div>
-
-<section class="bg-secondary pv5 ph4-ns ph3 nb4">
-  <div class="tc mb5-ns mb4 pb4 pt">
-    <h1 class="mw7 center">Related Articles</h1>
+<section class="ph4-ns ph3">
+  <div class="mb4">
+    <h2 class="mw7 center">Other Articles</h2>
   </div>
 
-  <div class="flex flex-wrap mw9 center">
+  <div class="flex flex-wrap mw7 center justify-center">
     {{ collection:insights :taxonomy:categories="categories" url:isnt="{url}" }}
-    <div class="flex mh3-ns mb4 mb0-l w-30-l">
-      <a
-        class="pv3 no-underline article-btn db w-100 relative c-black bg-white ba bc-secondary-2 bw2 ph4 pv5"
-        href="{{ url }}"
-      >
-        <div class="article-featured-img mb4">
-          {{ partial src="sets/image" }}
-        </div>
 
-        <h2 class="mb2 w-80-l">{{ title }}</h2>
-        <p class="mb4 w-80-l">{{ excerpt }}</p>
+    <a class="pv3 no-underline c-black" href="{{ url }}">
+      <h2 class="w-50-l mb3">{{ title }}</h2>
 
-        <button class="br-pill inline-flex items-center btn btn-primary">
-          Learn more
+      <p class="mb4 measure">
+        {{ excerpt }}
+        <br />
+        <span class="dib mt3">
+          Read
 
           <span class="pl3 relative" style="top: -2px">
             {{ svg src="assets/site/svg/button-arrow" }}
           </span>
-        </button>
-      </a>
-    </div>
+        </span>
+      </p>
+    </a>
 
     {{ /collection:insights }}
   </div>
 </section>
-
-

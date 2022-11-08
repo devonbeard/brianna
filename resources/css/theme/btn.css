@@ -5,11 +5,12 @@
 }
 
 .btn-primary {
-  @extend .f-alt;
+  @extend .f-main--m;
   @extend .f5;
-  border: 2px solid var(--black);
-  color: var(--black);
-  padding: 1.5rem 2rem;
+  border: 2px solid var(--gold);
+  background-color: var(--gold);
+  color: var(--white);
+  padding: 1rem 2rem;
   transition: 0.2s ease-in-out all;
   text-decoration: none;
   line-height: 1;
@@ -17,34 +18,35 @@
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: var(--black);
-  color: var(--white);
+  border-color: var(--gold);
+  background-color: transparent;
+  color: var(--gold);
 }
 
 .btn-secondary {
-  border: 2px solid var(--white);
-  background-color: var(--white);
-  color: var(--black);
+  border: 2px solid var(--brown);
+  background-color: var(--brown);
+  color: var(--peach);
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus {
-  border-color: var(--black);
-  background-color: var(--black);
-  color: var(--white);
+  border-color: var(--brown);
+  background-color: var(--peach);
+  color: var(--brown);
 }
 
 .btn-tertiary {
   border: 2px solid var(--white);
-  background-color: transparent;
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--brown);
 }
 
 .btn-tertiary:hover,
 .btn-tertiary:focus {
   border-color: var(--white);
-  background-color: var(--white);
-  color: var(--black);
+  background-color: transparent;
+  color: var(--brown);
 }
 
 .article-btn .article-btn-arrow {

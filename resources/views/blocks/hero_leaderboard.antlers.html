@@ -11,10 +11,14 @@
     >
       {{ left_column }} {{ partial src="sets/{type}" }} {{ /left_column }}
     </div>
+    {{ right_column limit="1" }}
     <div
       class="w-50-l mw7-l pl5-l center content {{ if swap_order_of_columns }}order-0-ns{{ /if }}"
+      style="background-image: ur({{ image }})"
     >
-      {{ right_column }} {{ partial src="sets/{type}" }} {{ /right_column }}
+      {{ responsive:image alt="{caption || alt}" loading="lazy" class="{{ if
+      include_shadow }}shadow-1{{ /if }}" }}
     </div>
+    {{ /right_column }}
   </div>
 </section>

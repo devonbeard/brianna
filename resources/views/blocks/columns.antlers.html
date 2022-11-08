@@ -6,7 +6,7 @@
     class="mw9 center flex-l flex-wrap justify-between {{ if column_vertical_alignment }}{{ if column_vertical_alignment == 'middle' }}items-center{{ /if}}{{ if column_vertical_alignment == 'bottom' }}items-end{{ /if}}{{ /if}}"
   >
     {{ if number_of_columns == "one" || column_width == 'full' }}
-    <div class="w-100-l center content">
+    <div class="w-100-l mw7 center content">
       {{ column }} {{ partial src="sets/{type}" }} {{ /column }}
     </div>
     {{ elseif number_of_columns == "three" }}

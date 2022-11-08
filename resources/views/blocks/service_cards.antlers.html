@@ -1,0 +1,54 @@
+<section
+  class="columns-block {{ partial src='styles/bg_and_text_color' }} {{ partial src='styles/spacing_above' }} {{ partial src='styles/spacing_below' }} {{ partial src='styles/padding_above' }} {{ partial src='styles/padding_below' }} {{ if !padding_above_columns || !padding_below_columns }}pt6-l pt5{{ /if }} ph5-ns ph4"
+>
+  {{ partial:section_headline }}
+  <div
+    class="mw9 center flex-l flex-wrap justify-between {{ if column_vertical_alignment }}{{ if column_vertical_alignment == 'middle' }}items-center{{ /if}}{{ if column_vertical_alignment == 'bottom' }}items-end{{ /if}}{{ /if}}"
+  >
+    <div class="w-100-l mw9 center content">
+      {{ services }}
+      <div>
+        {{ blocks limit="1"}}
+        <section
+          class="br4 mb5 {{ if background_color }}bg-{{ background_color.label | lower }}{{ /if }} {{ if text_color }}c-{{ text_color.label | lower }}{{ /if }}"
+          style="box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1)"
+        >
+          {{ background_color }}
+          <div
+            class="mw9 center flex-l flex-wrap justify-between {{ if column_vertical_alignment }}{{ if column_vertical_alignment == 'middle' }}items-center{{ /if}}{{ if column_vertical_alignment == 'bottom' }}items-end{{ /if}}{{ /if}}"
+          >
+            <div
+              class="w-50-l mw7-l pv4 ph4-l pa4 center content flex items-center {{ if swap_order_of_columns }}order-1-ns{{ /if }}"
+            >
+              <div class="cards">
+                {{ left_column limit="2" }} {{ partial src="sets/text" }} {{
+                /left_column }}
+                <div
+                  class="button-block pt4 {{ if button_horizontal_position == 'center' }}tc{{ elseif button_horizontal_position == 'right' }}tr{{ else }}tl{{ /if }}"
+                >
+                  <a
+                    href="{{ button_url }}"
+                    class="br-pill inline-flex items-center btn btn-primary nt3"
+                  >
+                    Learn more
+                    <span class="pl3 inline-flex items-center">
+                      {{ svg src="assets/site/svg/button-arrow" }}
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-50-l mw7-l pl5-l center content {{ if swap_order_of_columns }}order-0-ns{{ /if }}"
+            >
+              {{ right_column limit="1" }} {{ partial src="sets/image" }} {{
+              /right_column }}
+            </div>
+          </div>
+        </section>
+        {{ /blocks }}
+      </div>
+      {{ /services }}
+    </div>
+  </div>
+</section>

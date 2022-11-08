@@ -10,6 +10,7 @@
   --peach: #f8ece5;
   --light-brown: #6d5b57;
   --brown: #543a34;
+  --gold: #e2c064;
 
   --accent-1: #00cb93;
   --accent-2: #cb8900;
@@ -47,7 +48,7 @@
  * Background Color, Border Color, Text Color, Text Hover colors
 */
 /* prettier-ignore */
-@each $color in (primary, secondary, secondary-2, peach, light-brown, brown accent-1, accent-2, accent-3, accent-4, accent-5, accent-6, accent-7, accent-8, accent-9, accent-10, accent-11, accent-12, accent-13, white, off-gray, gray-1, gray-2, gray-3, gray-4, black, error, warning, success)
+@each $color in (primary, secondary, secondary-2, peach, gold, light-brown, brown, accent-1, accent-2, accent-3, accent-4, accent-5, accent-6, accent-7, accent-8, accent-9, accent-10, accent-11, accent-12, accent-13, white, off-gray, gray-1, gray-2, gray-3, gray-4, black, error, warning, success)
 {
   .bg-$(color) {
     background-color: var(--$(color));
