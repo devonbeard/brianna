@@ -1,7 +1,6 @@
 title: Common
 fields:
-  -
-    handle: bard
+  - handle: bard
     field:
       always_show_set_button: false
       buttons:
@@ -34,24 +33,19 @@ fields:
         articles:
           display: Articles
           fields:
-            -
-              handle: accent_color
+            - handle: accent_color
               field:
                 colors:
-                  -
-                    label: 'Accent 1'
+                  - label: 'Accent 1'
                     value:
                       - '#00cb93'
-                  -
-                    label: 'Accent 2'
+                  - label: 'Accent 2'
                     value:
                       - '#cb8900'
-                  -
-                    label: 'Accent 3'
+                  - label: 'Accent 3'
                     value:
                       - '#cb00c1'
-                  -
-                    label: 'Accent 4'
+                  - label: 'Accent 4'
                     value:
                       - '#57aeff'
                 display: 'Accent Color'
@@ -61,8 +55,7 @@ fields:
                 width: 50
                 instructions_position: above
                 default: 'Accent 1'
-            -
-              handle: headline
+            - handle: headline
               field:
                 input_type: text
                 antlers: false
@@ -71,8 +64,7 @@ fields:
                 icon: text
                 listable: hidden
                 width: 50
-            -
-              handle: articles
+            - handle: articles
               field:
                 display: Articles
                 type: section
@@ -80,8 +72,7 @@ fields:
                 instructions: 'You can either select individual articles or pull in articles by category'
                 listable: hidden
                 instructions_position: above
-            -
-              handle: articles
+            - handle: articles
               field:
                 mode: default
                 create: true
@@ -92,8 +83,7 @@ fields:
                 icon: entries
                 listable: hidden
                 instructions_position: above
-            -
-              handle: articles_by_category
+            - handle: articles_by_category
               field:
                 max_items: 1
                 mode: default
@@ -105,8 +95,7 @@ fields:
                 icon: taxonomy
                 listable: hidden
                 instructions_position: above
-            -
-              handle: view_more_articles_cta_text
+            - handle: view_more_articles_cta_text
               field:
                 input_type: text
                 antlers: false
@@ -115,8 +104,7 @@ fields:
                 icon: text
                 listable: hidden
                 instructions_position: above
-            -
-              handle: view_more_articles_link
+            - handle: view_more_articles_link
               field:
                 display: 'View More Articles Link'
                 type: link
@@ -126,16 +114,14 @@ fields:
         blockquote:
           display: Blockquote
           fields:
-            -
-              handle: quote
+            - handle: quote
               field:
                 antlers: false
                 display: Quote
                 type: textarea
                 icon: textarea
                 listable: hidden
-            -
-              handle: align_quote_to_side_of_content
+            - handle: align_quote_to_side_of_content
               field:
                 default: false
                 display: 'Align Quote to Side of Content'
@@ -144,8 +130,7 @@ fields:
                 instructions: 'By default quote is larger and full width, this will let you specify which side you want the quote on.'
                 width: 50
                 listable: hidden
-            -
-              handle: quote_author
+            - handle: quote_author
               field:
                 input_type: text
                 antlers: false
@@ -156,8 +141,7 @@ fields:
                 instructions_position: above
                 visibility: visible
                 always_save: false
-            -
-              handle: quote_alignment
+            - handle: quote_alignment
               field:
                 options:
                   left: Left
@@ -173,8 +157,7 @@ fields:
         button:
           display: Button
           fields:
-            -
-              handle: button_text
+            - handle: button_text
               field:
                 input_type: text
                 antlers: false
@@ -183,16 +166,14 @@ fields:
                 icon: text
                 width: 33
                 listable: hidden
-            -
-              handle: button_url
+            - handle: button_url
               field:
                 display: 'Button URL'
                 type: link
                 icon: link
                 width: 66
                 listable: hidden
-            -
-              handle: button_theme
+            - handle: button_theme
               field:
                 placeholder: primary
                 options:
@@ -213,8 +194,7 @@ fields:
                 listable: hidden
                 instructions_position: above
                 default: primary
-            -
-              handle: button_horizontal_position
+            - handle: button_horizontal_position
               field:
                 options:
                   left: Left
@@ -225,16 +205,14 @@ fields:
                 icon: button_group
                 width: 50
                 listable: hidden
-            -
-              handle: open_in_new_window
+            - handle: open_in_new_window
               field:
                 display: 'Open in new window?'
                 type: toggle
                 icon: toggle
                 listable: hidden
                 width: 50
-            -
-              handle: include_button_arrow
+            - handle: include_button_arrow
               field:
                 default: false
                 display: 'Include Button Arrow?'
@@ -245,14 +223,11 @@ fields:
         cta_with_form:
           display: 'CTA with Form'
           fields:
-            -
-              handle: background_color
+            - handle: background_color
               field: common.background_color
-            -
-              handle: text_color
+            - handle: text_color
               field: common.text_color
-            -
-              handle: headline
+            - handle: headline
               field:
                 input_type: text
                 antlers: false
@@ -260,8 +235,7 @@ fields:
                 type: text
                 icon: text
                 listable: hidden
-            -
-              handle: form_embed
+            - handle: form_embed
               field:
                 antlers: true
                 display: 'Form Embed'
@@ -271,8 +245,7 @@ fields:
         form:
           display: Form
           fields:
-            -
-              handle: light_mode
+            - handle: light_mode
               field:
                 default: true
                 display: 'Light Mode'
@@ -280,8 +253,7 @@ fields:
                 icon: toggle
                 listable: hidden
                 instructions_position: above
-            -
-              handle: content
+            - handle: content
               field:
                 always_show_set_button: false
                 buttons:
@@ -311,8 +283,7 @@ fields:
                 icon: bard
                 listable: hidden
                 instructions_position: above
-            -
-              handle: form
+            - handle: form
               field:
                 antlers: true
                 display: Form
@@ -323,12 +294,11 @@ fields:
                 default: '{{ partial src="sets/forms/stacked-form" }}'
         horizontal_rule:
           display: 'Horizontal Rule'
-          fields: {  }
+          fields: {}
         image:
           display: Image
           fields:
-            -
-              handle: image
+            - handle: image
               field:
                 mode: list
                 container: assets
@@ -341,8 +311,7 @@ fields:
                 type: assets
                 icon: assets
                 listable: hidden
-            -
-              handle: image_alignment
+            - handle: image_alignment
               field:
                 options:
                   left: Left
@@ -353,8 +322,7 @@ fields:
                 icon: button_group
                 listable: hidden
                 width: 50
-            -
-              handle: include_shadow
+            - handle: include_shadow
               field:
                 default: false
                 display: 'Include Shadow'
@@ -364,8 +332,7 @@ fields:
                 listable: hidden
                 instructions_position: above
                 width: 50
-            -
-              handle: animate_image
+            - handle: animate_image
               field:
                 default: false
                 display: 'Animate Image'
@@ -374,8 +341,7 @@ fields:
                 width: 50
                 listable: hidden
                 instructions_position: above
-            -
-              handle: animation_speed
+            - handle: animation_speed
               field:
                 options:
                   fast: Fast
@@ -397,8 +363,7 @@ fields:
         html:
           display: HTML
           fields:
-            -
-              handle: html_code
+            - handle: html_code
               field:
                 antlers: true
                 display: 'HTML code'
@@ -416,16 +381,14 @@ fields:
       previews: true
       antlers: false
       remove_empty_nodes: false
-  -
-    handle: dark_mode
+  - handle: dark_mode
     field:
       type: toggle
       listable: hidden
       display: 'Dark Mode?'
       instructions: 'Inverts the block to be dark background and light text.'
       width: 50
-  -
-    handle: column_vertical_alignment
+  - handle: column_vertical_alignment
     field:
       options:
         top: Top
@@ -442,46 +405,41 @@ fields:
       display: 'Column Vertical Alignment'
       instructions: 'Allows you to place the content at different positions within the block.'
       width: 50
-  -
-    handle: swap_order_of_columns
+  - handle: swap_order_of_columns
     field:
       type: toggle
       listable: hidden
       display: 'Swap Order of Columns'
       instructions: 'The toggle swaps the order of columns on tablet & desktop, allows for creative layouts on tablet and desktop. Column Left becomes Column Right and vise versa.'
       width: 50
-  -
-    handle: animate_image
+  - handle: animate_image
     field:
       display: 'Animate Image'
       type: toggle
       icon: toggle
       width: 50
       listable: hidden
-  -
-    handle: background_color
+  - handle: background_color
     field:
       colors:
-        -
-          label: White
+        - label: White
           value:
             - '#ffffff'
-        -
-          label: Black
+        - label: Black
           value:
             - '#222222'
-        -
-          label: Peach
+        - label: Peach
           value:
             - '#F8ECE5'
-        -
-          label: 'Light Brown'
+        - label: 'Light Brown'
           value:
             - '#6d5b57'
-        -
-          label: Brown
+        - label: Brown
           value:
             - '#543A34'
+        - label: Gold
+          value:
+            - '#e2c064'
       display: 'Background Color'
       type: color_swatches
       icon: color
@@ -490,37 +448,33 @@ fields:
       instructions_position: above
       visibility: visible
       always_save: false
-  -
-    handle: text_color
+  - handle: text_color
     field:
       colors:
-        -
-          label: White
+        - label: White
           value:
             - '#ffffff'
-        -
-          label: Black
+        - label: Black
           value:
             - '#222222'
-        -
-          label: Peach
+        - label: Peach
           value:
             - '#F8ECE5'
-        -
-          label: 'Light Brown'
+        - label: 'Light Brown'
           value:
             - '#6d5b57'
-        -
-          label: Brown
+        - label: Brown
           value:
             - '#543A34'
+        - label: Gold
+          value:
+            - '#e2c064'
       display: 'Text Color'
       type: color_swatches
       icon: color
       listable: hidden
       width: 50
-  -
-    handle: spacing_above_columns
+  - handle: spacing_above_columns
     field:
       options:
         3: S
@@ -541,8 +495,7 @@ fields:
       width: 50
       listable: hidden
       instructions_position: above
-  -
-    handle: spacing_below_columns
+  - handle: spacing_below_columns
     field:
       options:
         3: S
@@ -563,8 +516,7 @@ fields:
       width: 50
       listable: hidden
       instructions_position: above
-  -
-    handle: padding_above_columns
+  - handle: padding_above_columns
     field:
       options:
         3: S
@@ -585,8 +537,7 @@ fields:
       width: 50
       listable: hidden
       instructions_position: above
-  -
-    handle: padding_below_columns
+  - handle: padding_below_columns
     field:
       options:
         3: S
