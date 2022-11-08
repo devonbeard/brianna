@@ -440,6 +440,15 @@ fields:
         - label: Gold
           value:
             - '#e2c064'
+        - label: Pink
+          value:
+            - '#ECC5BF'
+        - label: Mint
+          value:
+            - '#B2BC9C'
+        - label: Ivory
+          value:
+            - '#F1ECE6'
       display: 'Background Color'
       type: color_swatches
       icon: color
@@ -469,6 +478,15 @@ fields:
         - label: Gold
           value:
             - '#e2c064'
+        - label: Pink
+          value:
+            - '#ECC5BF'
+        - label: Mint
+          value:
+            - '#B2BC9C'
+        - label: Ivory
+          value:
+            - '#F1ECE6'
       display: 'Text Color'
       type: color_swatches
       icon: color

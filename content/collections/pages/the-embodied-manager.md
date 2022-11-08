@@ -6,13 +6,13 @@ blocks:
   -
     id: RLzbMWZ1
     background_color:
-      label: Peach
+      label: Pink
       value:
-        - '#F8ECE5'
+        - '#ECC5BF'
     text_color:
-      label: Brown
+      label: Black
       value:
-        - '#543A34'
+        - '#222222'
     swap_order_of_columns: false
     left_column:
       -
@@ -593,5 +593,5 @@ blocks:
           class: null
 parent: ac915086-2ff0-496b-b734-b7d073d4e587
 updated_by: bd153216-d5f9-4c8b-8d57-d966665b740d
-updated_at: 1667874914
+updated_at: 1667878498
 ---
