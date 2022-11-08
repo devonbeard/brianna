@@ -651,11 +651,11 @@ fields:
           display: 'Service Cards'
           fields:
             -
-              handle: headline
+              handle: section_headline
               field:
                 input_type: text
                 antlers: false
-                display: Headline
+                display: 'Section Headline'
                 type: text
                 icon: text
                 listable: hidden
