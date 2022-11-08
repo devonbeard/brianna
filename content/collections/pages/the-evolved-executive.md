@@ -38,7 +38,7 @@ blocks:
           values:
             type: button
             button_text: 'Join the waitlist'
-            button_theme: secondary
+            button_theme: tertiary
             open_in_new_window: true
             include_button_arrow: true
             button_url: 'https://calendly.com/holisticsolutionswithbrianna/organizational-consultation'
@@ -621,5 +621,5 @@ blocks:
           class: null
 parent: ac915086-2ff0-496b-b734-b7d073d4e587
 updated_by: bd153216-d5f9-4c8b-8d57-d966665b740d
-updated_at: 1667876661
+updated_at: 1667877037
 ---
