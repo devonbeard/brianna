@@ -4,14 +4,15 @@ blueprint: page_builder
 title: 'The Evolved Executive'
 blocks:
   -
+    id: fA5aHP0S
     background_color:
-      label: Peach
-      value:
-        - '#F8ECE5'
-    text_color:
       label: Brown
       value:
         - '#543A34'
+    text_color:
+      label: Peach
+      value:
+        - '#F8ECE5'
     swap_order_of_columns: false
     left_column:
       -
@@ -37,6 +38,7 @@ blocks:
       -
         type: set
         attrs:
+          id: Fj7VLQFM
           values:
             type: button
             button_text: 'Join the waitlist'
@@ -54,6 +56,7 @@ blocks:
       -
         type: set
         attrs:
+          id: UvriWylT
           values:
             type: image
             image: content/hero.jpg
@@ -65,6 +68,7 @@ blocks:
         attrs:
           class: null
   -
+    id: 81OLQsg8
     swap_order_of_columns: false
     number_of_columns: two
     column_width: halves
@@ -74,6 +78,7 @@ blocks:
       -
         type: set
         attrs:
+          id: IYTsCwT3
           values:
             type: image
             image: content/training-employees-2-0ikdpiy5202s5gfhfvyzpn.webp
@@ -95,6 +100,7 @@ blocks:
       -
         type: set
         attrs:
+          id: VWfInENQ
           values:
             type: image
             image: content/being-happy-z267ruyvc9lvscvh0eayf.webp
@@ -189,6 +195,7 @@ blocks:
     type: columns
     enabled: true
   -
+    id: ka9Jdklp
     swap_order_of_columns: false
     number_of_columns: one
     column_width: halves
@@ -197,6 +204,7 @@ blocks:
       -
         type: set
         attrs:
+          id: EWWVFpAR
           values:
             type: image
             image: content/moth.png
@@ -207,6 +215,7 @@ blocks:
       -
         type: set
         attrs:
+          id: KqGhc1qN
           values:
             type: blockquote
             quote: '“If i can impact an executive and his or her team, i can change the culture of an organization.”'
@@ -219,6 +228,7 @@ blocks:
     type: columns
     enabled: true
   -
+    id: EezgBaFU
     text_color:
       label: Brown
       value:
@@ -236,6 +246,7 @@ blocks:
       -
         type: set
         attrs:
+          id: bBvjXDfS
           values:
             type: image
             image: content/briana-featured.webp
@@ -282,6 +293,7 @@ blocks:
             type: text
             text: 'Since launching Holistic Solutions in 2020, she’s helped hundreds of people around the globe to move away from living on autopilot and within survival mode in order to embrace a life of joy, alignment, and authenticity. She is now ready to bring that same passion for evolution into cultural organization.'
   -
+    id: 6oQ23Opw
     swap_order_of_columns: false
     number_of_columns: three
     column_width: thirds
@@ -408,6 +420,7 @@ blocks:
       -
         type: set
         attrs:
+          id: truN69iT
           values:
             type: image
             image: content/grid-design.png
@@ -474,6 +487,7 @@ blocks:
     type: columns
     enabled: true
   -
+    id: sSG8g9Aw
     text_color:
       label: Brown
       value:
@@ -541,6 +555,7 @@ blocks:
     enabled: true
     section_headline_alignment: center
   -
+    id: yjFhahuN
     swap_order_of_columns: false
     number_of_columns: one
     column_width: halves
@@ -595,6 +610,7 @@ blocks:
       -
         type: set
         attrs:
+          id: haXSr1x2
           values:
             type: button
             button_text: 'Join the waitlist'
@@ -609,5 +625,5 @@ blocks:
           class: null
 parent: ac915086-2ff0-496b-b734-b7d073d4e587
 updated_by: bd153216-d5f9-4c8b-8d57-d966665b740d
-updated_at: 1667592358
+updated_at: 1667869885
 ---
