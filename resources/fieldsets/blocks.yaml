@@ -651,6 +651,18 @@ fields:
           display: 'Service Cards'
           fields:
             -
+              handle: headline
+              field:
+                input_type: text
+                antlers: false
+                display: Headline
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+            -
               handle: services
               field:
                 mode: default
