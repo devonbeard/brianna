@@ -4,6 +4,7 @@ blueprint: page_builder
 title: 'The Embodied Manager'
 blocks:
   -
+    id: RLzbMWZ1
     background_color:
       label: Peach
       value:
@@ -14,10 +15,6 @@ blocks:
         - '#543A34'
     swap_order_of_columns: false
     left_column:
-      -
-        type: paragraph
-        attrs:
-          class: null
       -
         type: heading
         attrs:
@@ -37,6 +34,7 @@ blocks:
       -
         type: set
         attrs:
+          id: f4QCVFb8
           values:
             type: button
             button_text: 'Join the waitlist'
@@ -54,6 +52,7 @@ blocks:
       -
         type: set
         attrs:
+          id: 6U7hyWW0
           values:
             type: image
             image: content/hero.jpg
@@ -65,6 +64,7 @@ blocks:
         attrs:
           class: null
   -
+    id: q28wpDOh
     swap_order_of_columns: false
     number_of_columns: two
     column_width: halves
@@ -163,6 +163,7 @@ blocks:
     type: columns
     enabled: true
   -
+    id: waDbJbgj
     swap_order_of_columns: false
     number_of_columns: one
     column_width: halves
@@ -171,6 +172,7 @@ blocks:
       -
         type: set
         attrs:
+          id: CM0SgzS0
           values:
             type: image
             image: content/moth.png
@@ -181,6 +183,7 @@ blocks:
       -
         type: set
         attrs:
+          id: cCLwFj2U
           values:
             type: blockquote
             quote: '“If i can impact an executive and his or her team, i can change the culture of an organization.”'
@@ -193,6 +196,7 @@ blocks:
     type: columns
     enabled: true
   -
+    id: t94qjp9d
     text_color:
       label: Brown
       value:
@@ -210,6 +214,7 @@ blocks:
       -
         type: set
         attrs:
+          id: pk2w9SbY
           values:
             type: image
             image: content/briana-featured.webp
@@ -256,6 +261,7 @@ blocks:
             type: text
             text: 'Since launching Holistic Solutions in 2020, she’s helped hundreds of people around the globe to move away from living on autopilot and within survival mode in order to embrace a life of joy, alignment, and authenticity. She is now ready to bring that same passion for evolution into cultural organization.'
   -
+    id: MH1xcHoJ
     swap_order_of_columns: false
     number_of_columns: three
     column_width: thirds
@@ -382,6 +388,7 @@ blocks:
       -
         type: set
         attrs:
+          id: WATafshG
           values:
             type: image
             image: content/grid-design.png
@@ -448,6 +455,7 @@ blocks:
     type: columns
     enabled: true
   -
+    id: oGYgUrhb
     text_color:
       label: Brown
       value:
@@ -515,6 +523,7 @@ blocks:
     enabled: true
     section_headline_alignment: center
   -
+    id: pwMxGJmT
     swap_order_of_columns: false
     number_of_columns: one
     column_width: halves
@@ -569,6 +578,7 @@ blocks:
       -
         type: set
         attrs:
+          id: dKcgvAAf
           values:
             type: button
             button_text: 'Join the waitlist'
@@ -583,5 +593,5 @@ blocks:
           class: null
 parent: ac915086-2ff0-496b-b734-b7d073d4e587
 updated_by: bd153216-d5f9-4c8b-8d57-d966665b740d
-updated_at: 1667591158
+updated_at: 1667874914
 ---
