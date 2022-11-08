@@ -4,10 +4,11 @@ blueprint: page_builder
 title: 'Engagement Alchemy'
 blocks:
   -
+    id: fs6Wde3o
     background_color:
-      label: Peach
+      label: White
       value:
-        - '#F8ECE5'
+        - '#ffffff'
     text_color:
       label: 'Light Brown'
       value:
@@ -37,6 +38,7 @@ blocks:
       -
         type: set
         attrs:
+          id: xPFSoq0S
           values:
             type: button
             button_text: 'Join the waitlist'
@@ -54,6 +56,7 @@ blocks:
       -
         type: set
         attrs:
+          id: TmlJknFx
           values:
             type: image
             image: content/hero.jpg
@@ -65,6 +68,7 @@ blocks:
         attrs:
           class: null
   -
+    id: wlxFGGmo
     swap_order_of_columns: false
     number_of_columns: two
     column_width: halves
@@ -173,6 +177,7 @@ blocks:
     spacing_above_columns: '7'
     padding_above_columns: '7'
   -
+    id: i0jAxMkk
     swap_order_of_columns: false
     number_of_columns: one
     column_width: halves
@@ -181,6 +186,7 @@ blocks:
       -
         type: set
         attrs:
+          id: B70FOIC4
           values:
             type: image
             image: content/moth.png
@@ -191,6 +197,7 @@ blocks:
       -
         type: set
         attrs:
+          id: NCYOsNuM
           values:
             type: blockquote
             quote: '“If i can impact an executive and his or her team, i can change the culture of an organization.”'
@@ -203,6 +210,7 @@ blocks:
     type: columns
     enabled: true
   -
+    id: T7GuoRsK
     text_color:
       label: Brown
       value:
@@ -220,6 +228,7 @@ blocks:
       -
         type: set
         attrs:
+          id: xeiYBJ8G
           values:
             type: image
             image: content/briana-featured.webp
@@ -266,6 +275,7 @@ blocks:
             type: text
             text: 'Since launching Holistic Solutions in 2020, she’s helped hundreds of people around the globe to move away from living on autopilot and within survival mode in order to embrace a life of joy, alignment, and authenticity. She is now ready to bring that same passion for evolution into cultural organization.'
   -
+    id: RGuA7x8u
     swap_order_of_columns: false
     number_of_columns: three
     column_width: thirds
@@ -392,6 +402,7 @@ blocks:
       -
         type: set
         attrs:
+          id: hpbBvSI4
           values:
             type: image
             image: content/grid-design.png
@@ -458,6 +469,7 @@ blocks:
     type: columns
     enabled: true
   -
+    id: YHvQNbp4
     text_color:
       label: Brown
       value:
@@ -525,6 +537,7 @@ blocks:
     enabled: true
     section_headline_alignment: center
   -
+    id: hIjjBWUZ
     swap_order_of_columns: false
     number_of_columns: one
     column_width: halves
@@ -579,6 +592,7 @@ blocks:
       -
         type: set
         attrs:
+          id: mujyRAZb
           values:
             type: button
             button_text: 'Join the waitlist'
@@ -593,5 +607,5 @@ blocks:
           class: null
 parent: ac915086-2ff0-496b-b734-b7d073d4e587
 updated_by: bd153216-d5f9-4c8b-8d57-d966665b740d
-updated_at: 1667591545
+updated_at: 1667873451
 ---
