@@ -651,6 +651,12 @@ fields:
           display: 'Service Cards'
           fields:
             -
+              handle: background_color
+              field: common.background_color
+            -
+              handle: text_color
+              field: common.text_color
+            -
               handle: section_headline
               field:
                 input_type: text
