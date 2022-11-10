@@ -1,28 +1,35 @@
 title: Blocks
 fields:
-  - handle: blocks
+  -
+    handle: blocks
     field:
       collapse: true
       sets:
         columns:
           display: Columns
           fields:
-            - handle: background_color
+            -
+              handle: background_color
               field: common.background_color
-            - handle: text_color
+            -
+              handle: text_color
               field: common.text_color
-            - handle: column_vertical_alignment
+            -
+              handle: column_vertical_alignment
               field: common.column_vertical_alignment
-            - handle: swap_order_of_columns
+            -
+              handle: swap_order_of_columns
               field: common.swap_order_of_columns
-            - handle: column_settings
+            -
+              handle: column_settings
               field:
                 display: 'Column Settings'
                 type: section
                 icon: section
                 listable: hidden
                 instructions_position: above
-            - handle: number_of_columns
+            -
+              handle: number_of_columns
               field:
                 options:
                   one: One
@@ -36,7 +43,8 @@ fields:
                 width: 50
                 listable: hidden
                 instructions_position: above
-            - handle: column_width
+            -
+              handle: column_width
               field:
                 options:
                   full: '100'
@@ -58,7 +66,8 @@ fields:
                 taggable: false
                 push_tags: false
                 cast_booleans: false
-            - handle: spacing_above_columns
+            -
+              handle: spacing_above_columns
               field:
                 options:
                   3: S
@@ -79,7 +88,8 @@ fields:
                 width: 50
                 listable: hidden
                 instructions_position: above
-            - handle: spacing_below_columns
+            -
+              handle: spacing_below_columns
               field:
                 options:
                   3: S
@@ -100,7 +110,8 @@ fields:
                 width: 50
                 listable: hidden
                 instructions_position: above
-            - handle: padding_above_columns
+            -
+              handle: padding_above_columns
               field:
                 options:
                   3: S
@@ -121,7 +132,8 @@ fields:
                 width: 50
                 listable: hidden
                 instructions_position: above
-            - handle: padding_below_columns
+            -
+              handle: padding_below_columns
               field:
                 options:
                   3: S
@@ -142,14 +154,16 @@ fields:
                 width: 50
                 listable: hidden
                 instructions_position: above
-            - handle: column_content
+            -
+              handle: column_content
               field:
                 display: 'Column Content'
                 type: section
                 icon: section
                 listable: hidden
                 instructions_position: above
-            - handle: section_headline
+            -
+              handle: section_headline
               field:
                 input_type: text
                 antlers: false
@@ -158,7 +172,8 @@ fields:
                 icon: text
                 instructions: 'This allows you to have a section headline outside of the columns.'
                 listable: hidden
-            - handle: section_headline_alignment
+            -
+              handle: section_headline_alignment
               field:
                 options:
                   left: Left
@@ -172,7 +187,8 @@ fields:
                 instructions_position: above
                 visibility: visible
                 always_save: false
-            - handle: left_column
+            -
+              handle: left_column
               field: common.bard
               config:
                 buttons:
@@ -191,7 +207,8 @@ fields:
                 display: 'Left Column'
                 if:
                   number_of_columns: 'not one'
-            - handle: middle_column
+            -
+              handle: middle_column
               field: common.bard
               config:
                 buttons:
@@ -210,13 +227,15 @@ fields:
                 display: 'Middle Column'
                 if:
                   number_of_columns: 'equals three'
-            - handle: right_column
+            -
+              handle: right_column
               field: common.bard
               config:
                 display: 'Right Column'
                 if:
                   number_of_columns: 'not one'
-            - handle: column
+            -
+              handle: column
               field: common.bard
               config:
                 buttons:
@@ -238,11 +257,14 @@ fields:
         cta_with_form:
           display: 'CTA with Form'
           fields:
-            - handle: background_color
+            -
+              handle: background_color
               field: common.background_color
-            - handle: text_color
+            -
+              handle: text_color
               field: common.text_color
-            - handle: left_column
+            -
+              handle: left_column
               field: common.bard
               config:
                 buttons:
@@ -259,7 +281,8 @@ fields:
                   - quote
                   - anchor
                 display: 'Left Column'
-            - handle: form_embed_code
+            -
+              handle: form_embed_code
               field:
                 antlers: true
                 display: 'Form Embed Code'
@@ -270,11 +293,14 @@ fields:
         full_width_cta:
           display: 'Full Width CTA'
           fields:
-            - handle: background_color
+            -
+              handle: background_color
               field: common.background_color
-            - handle: text_color
+            -
+              handle: text_color
               field: common.text_color
-            - handle: background_image
+            -
+              handle: background_image
               field:
                 mode: list
                 container: assets
@@ -287,7 +313,8 @@ fields:
                 type: assets
                 icon: assets
                 listable: hidden
-            - handle: content
+            -
+              handle: content
               field: common.bard
               config:
                 buttons:
@@ -306,15 +333,23 @@ fields:
         hero_leaderboard:
           display: 'Hero Leaderboard'
           fields:
-            - handle: background_color
+            -
+              handle: background_color
               field: common.background_color
-            - handle: text_color
+            -
+              handle: text_color
               field: common.text_color
-            - handle: column_vertical_alignment
+            -
+              handle: gradient_background
+              field: common.gradient_background
+            -
+              handle: column_vertical_alignment
               field: common.column_vertical_alignment
-            - handle: swap_order_of_columns
+            -
+              handle: swap_order_of_columns
               field: common.swap_order_of_columns
-            - handle: left_column
+            -
+              handle: left_column
               field: common.bard
               config:
                 buttons:
@@ -332,7 +367,8 @@ fields:
                   - anchor
                   - image
                 display: 'Left Column'
-            - handle: right_column
+            -
+              handle: right_column
               field: common.bard
               config:
                 buttons:
@@ -353,11 +389,14 @@ fields:
         icon_list:
           display: 'Icon List'
           fields:
-            - handle: background_color
+            -
+              handle: background_color
               field: common.background_color
-            - handle: text_color
+            -
+              handle: text_color
               field: common.text_color
-            - handle: section_headline
+            -
+              handle: section_headline
               field:
                 input_type: text
                 antlers: false
@@ -365,14 +404,16 @@ fields:
                 type: text
                 icon: text
                 listable: hidden
-            - handle: icon_block
+            -
+              handle: icon_block
               field:
                 collapse: false
                 sets:
                   content:
                     display: Content
                     fields:
-                      - handle: icon_horizontal
+                      -
+                        handle: icon_horizontal
                         field:
                           default: false
                           display: 'Icon Horizontal'
@@ -381,7 +422,8 @@ fields:
                           instructions: 'By default, icons stack on top of content. This will allow you to align the icon left of the content.'
                           width: 50
                           listable: hidden
-                      - handle: image
+                      -
+                        handle: image
                         field:
                           mode: list
                           container: assets
@@ -395,7 +437,8 @@ fields:
                           icon: assets
                           listable: hidden
                           width: 50
-                      - handle: content
+                      -
+                        handle: content
                         field: common.bard
                         config:
                           buttons:
@@ -418,15 +461,20 @@ fields:
         logos:
           display: Logos
           fields:
-            - handle: background_color
+            -
+              handle: background_color
               field: common.background_color
-            - handle: text_color
+            -
+              handle: text_color
               field: common.text_color
-            - handle: padding_above_columns
+            -
+              handle: padding_above_columns
               field: common.padding_above_columns
-            - handle: padding_below_columns
+            -
+              handle: padding_below_columns
               field: common.padding_below_columns
-            - handle: section_title
+            -
+              handle: section_title
               field:
                 placeholder: 'Featured On:'
                 input_type: text
@@ -436,7 +484,8 @@ fields:
                 icon: text
                 width: 50
                 listable: hidden
-            - handle: logos_per_row
+            -
+              handle: logos_per_row
               field:
                 options:
                   4: Four
@@ -449,14 +498,16 @@ fields:
                 instructions: 'How many logos per row would you like to have?'
                 width: 50
                 listable: hidden
-            - handle: logos
+            -
+              handle: logos
               field:
                 collapse: false
                 sets:
                   logo:
                     display: Logo
                     fields:
-                      - handle: company_logo
+                      -
+                        handle: company_logo
                         field:
                           mode: list
                           container: assets
@@ -469,7 +520,8 @@ fields:
                           type: assets
                           icon: assets
                           listable: hidden
-                      - handle: company_url
+                      -
+                        handle: company_url
                         field:
                           display: 'Company URL'
                           type: link
@@ -482,11 +534,14 @@ fields:
         stats:
           display: Stats
           fields:
-            - handle: background_color
+            -
+              handle: background_color
               field: common.background_color
-            - handle: text_color
+            -
+              handle: text_color
               field: common.text_color
-            - handle: section_headline
+            -
+              handle: section_headline
               field:
                 input_type: text
                 antlers: false
@@ -494,14 +549,16 @@ fields:
                 type: text
                 icon: text
                 listable: hidden
-            - handle: stats
+            -
+              handle: stats
               field:
                 collapse: false
                 sets:
                   stat:
                     display: Stat
                     fields:
-                      - handle: stat_number
+                      -
+                        handle: stat_number
                         field:
                           input_type: text
                           antlers: false
@@ -509,7 +566,8 @@ fields:
                           type: text
                           icon: text
                           listable: hidden
-                      - handle: stat_description
+                      -
+                        handle: stat_description
                         field:
                           antlers: false
                           display: 'Stat Description'
@@ -523,7 +581,8 @@ fields:
         featured_articles:
           display: 'Featured Articles'
           fields:
-            - handle: section_headline
+            -
+              handle: section_headline
               field:
                 input_type: text
                 antlers: false
@@ -532,7 +591,8 @@ fields:
                 icon: text
                 listable: hidden
                 instructions_position: above
-            - handle: featured_articles
+            -
+              handle: featured_articles
               field:
                 max_items: 3
                 mode: default
@@ -544,18 +604,22 @@ fields:
                 icon: entries
                 listable: hidden
                 instructions_position: above
-            - handle: featured_article_cta_section
+            -
+              handle: featured_article_cta_section
               field:
                 display: 'Featured Article CTA Section'
                 type: section
                 icon: section
                 listable: hidden
                 instructions_position: above
-            - handle: background_color
+            -
+              handle: background_color
               field: common.background_color
-            - handle: text_color
+            -
+              handle: text_color
               field: common.text_color
-            - handle: image
+            -
+              handle: image
               field:
                 mode: list
                 container: assets
@@ -569,7 +633,8 @@ fields:
                 icon: assets
                 listable: hidden
                 instructions_position: above
-            - handle: content
+            -
+              handle: content
               field: common.bard
               config:
                 buttons:
@@ -588,11 +653,14 @@ fields:
         service_cards:
           display: 'Service Cards'
           fields:
-            - handle: background_color
+            -
+              handle: background_color
               field: common.background_color
-            - handle: text_color
+            -
+              handle: text_color
               field: common.text_color
-            - handle: section_headline
+            -
+              handle: section_headline
               field:
                 input_type: text
                 antlers: false
@@ -603,7 +671,8 @@ fields:
                 instructions_position: above
                 visibility: visible
                 always_save: false
-            - handle: section_headline_alignment
+            -
+              handle: section_headline_alignment
               field:
                 options:
                   left: Left
@@ -617,7 +686,8 @@ fields:
                 instructions_position: above
                 visibility: visible
                 always_save: false
-            - handle: services
+            -
+              handle: services
               field:
                 mode: default
                 create: true
