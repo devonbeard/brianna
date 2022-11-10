@@ -1,8 +1,9 @@
 <section
-  class="pv4 ph4 ph5-ns {{ if background_color }}bg-{{ background_color.label | lower }}{{ /if }} {{ if text_color }}c-{{ text_color.label | lower }}{{ /if }}"
-  style=""
+  class="pv4 ph4 ph5-ns {{ if background_color }}bg-{{ background_color.label | lower }}{{ /if }} {{ if text_color }}c-{{ text_color.label | lower }}{{ /if }}   {{ if gradient_background == 'gold'}}bg-gold-gradient{{ /if }} {{ if
+  gradient_background == 'rust'}}bg-rust-gradient{{ /if }} {{ if
+  gradient_background == 'pink'}}bg-pink-gradient{{ /if }} {{ if
+  gradient_background == 'green'}}bg-green-gradient{{ /if }}"
 >
-  {{ background_color }}
   <div
     class="mw9 center flex-l flex-wrap justify-between {{ if column_vertical_alignment }}{{ if column_vertical_alignment == 'middle' }}items-center{{ /if}}{{ if column_vertical_alignment == 'bottom' }}items-end{{ /if}}{{ /if}}"
   >

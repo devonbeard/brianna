@@ -7,7 +7,7 @@ const mobileNav = document.querySelector('.js-mobile-nav');
 
 if (mobileNavBtn) {
   mobileNavBtn.addEventListener('click', () => {
-    header.classList.toggle('bg-primary');
+    // header.classList.toggle('bg-primary');
 
     logo.classList.toggle('c-black');
     logo.classList.toggle('c-white');

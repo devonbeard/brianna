@@ -10,7 +10,7 @@
       <img src="{{ site_globals:site_logo }}" alt="" style="max-width: 148px" />
     </a>
 
-    <button class="db dn-l js-mobile-menu-btn b0 p0 btn-reset">
+    <button class="db dn-l js-mobile-menu-btn b0 p0 btn-reset c-brown">
       <span class="clip">Toggle Menu</span>
       {{ svg src="assets/site/svg/mobile-nav-open" class="js-mobile-open-icon
       db" }} {{ svg src="assets/site/svg/mobile-nav-close"
@@ -31,11 +31,11 @@
           nav-close" }}{{/if }}
         </a>
         {{ if children }}
-        <nav class="absolute mt2 nl2 dn js-child-nav bg-brown pv3 z-999">
+        <nav class="absolute mt2 nl2 dn js-child-nav bg-light-brown z-999">
           {{ children }}
           <a
             href="{{ url }}"
-            class="pv2 ph3 db c-white no-underline f-alt hover-bg-black nav__child-link"
+            class="pv2 ph3 db c-white no-underline f-alt hover-bg-brown nav__child-link"
             >{{ title }}</a
           >
           {{ /children }}
@@ -46,13 +46,13 @@
     </nav>
 
     <nav
-      class="dn justify-between items-center f5 js-mobile-nav absolute left-0 right-0 top-0 bg-brown c-white mt5 pt3 ph3 z-999"
+      class="dn justify-between items-center f5 js-mobile-nav absolute left-0 right-0 top-0 bg-light-brown c-white mt5 pt3 ph3 z-999"
     >
       {{ nav:navigation }}
       <div>
         <a
           href="{{ url }}"
-          class="nav__link flex justify-between f2 pv3 f-alt no-underline relative pr1 {{ if children }}js-subnav{{ /if }}"
+          class="nav__link flex justify-between f3 pv3 f-alt no-underline relative pr1 {{ if children }}js-subnav{{ /if }}"
           style="color: currentColor"
           ><span class="dib">{{ title }}</span>
           {{ if children }} {{ svg src="assets/site/svg/arrow-down" class="pl2

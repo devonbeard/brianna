@@ -10,7 +10,10 @@
       <div>
         {{ blocks limit="1"}}
         <section
-          class="br4 mb5 {{ if background_color }}bg-{{ background_color.label | lower }}{{ /if }} {{ if text_color }}c-{{ text_color.label | lower }}{{ /if }}"
+          class="br4 mb5 {{ if background_color }}bg-{{ background_color.label | lower }}{{ /if }} {{ if text_color }}c-{{ text_color.label | lower }}{{ /if }} {{ if gradient_background == 'gold'}}bg-gold-gradient{{ /if }} {{ if
+  gradient_background == 'rust'}}bg-rust-gradient{{ /if }} {{ if
+  gradient_background == 'pink'}}bg-pink-gradient{{ /if }} {{ if
+  gradient_background == 'green'}}bg-green-gradient{{ /if }}"
           style="box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1)"
         >
           {{ background_color }}
@@ -27,8 +30,8 @@
                   class="button-block pt4 {{ if button_horizontal_position == 'center' }}tc{{ elseif button_horizontal_position == 'right' }}tr{{ else }}tl{{ /if }}"
                 >
                   <a
-                    href="{{ button_url }}"
-                    class="br-pill inline-flex items-center btn btn-primary nt3"
+                    href="{{ url }}"
+                    class="br-pill inline-flex items-center btn btn-primary btn-tertiary nt3"
                   >
                     Learn more
                     <span class="pl3 inline-flex items-center">

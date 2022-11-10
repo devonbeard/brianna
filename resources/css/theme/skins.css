@@ -70,3 +70,42 @@
     background-color: var(--$(color));
   }
 }
+
+.bg-gold-gradient {
+  background: linear-gradient(
+    180deg,
+    #f9c86f 0%,
+    #fbdca4 31.77%,
+    #f4c165 76.56%,
+    #d09730 100%
+  );
+}
+
+.bg-rust-gradient {
+  background: linear-gradient(
+    180deg,
+    #c6a499 8.11%,
+    #b38b7e 51.98%,
+    #805957 100%
+  );
+}
+
+.bg-pink-gradient {
+  background: linear-gradient(
+    180deg,
+    #e8bfb9 -24.25%,
+    #efcac4 8.11%,
+    #d6a49d 58.58%,
+    #b0827a 100%
+  );
+}
+
+.bg-green-gradient {
+  background: linear-gradient(
+    180deg,
+    #c6c8b2 -24.25%,
+    #b2bc9c 8.11%,
+    #919478 58.58%,
+    #919478 100%
+  );
+}

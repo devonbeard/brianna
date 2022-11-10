@@ -17,7 +17,7 @@
         "rias/statamic-color-swatches": "^2.0",
         "simonridley/tracking-code-manager": "dev-master",
         "spatie/statamic-responsive-images": "^2.8.3",
-        "statamic/cms": "3.3.52",
+        "statamic/cms": "3.3.54",
         "statamic/seo-pro": "^3.1"
     },
     "require-dev": {
