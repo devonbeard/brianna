@@ -3,7 +3,7 @@ id: cb16045d-57a8-43c4-9a04-455493c6f602
 blueprint: page_builder
 title: Contact
 updated_by: bd153216-d5f9-4c8b-8d57-d966665b740d
-updated_at: 1668049976
+updated_at: 1668049982
 blocks:
   -
     id: heSejXXr
@@ -12,9 +12,9 @@ blocks:
       value:
         - '#F8ECE5'
     text_color:
-      label: White
+      label: Brown
       value:
-        - '#ffffff'
+        - '#543A34'
     swap_order_of_columns: false
     left_column:
       -
