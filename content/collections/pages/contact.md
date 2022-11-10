@@ -3,14 +3,14 @@ id: cb16045d-57a8-43c4-9a04-455493c6f602
 blueprint: page_builder
 title: Contact
 updated_by: bd153216-d5f9-4c8b-8d57-d966665b740d
-updated_at: 1668049887
+updated_at: 1668049976
 blocks:
   -
     id: heSejXXr
     background_color:
-      label: Primary
+      label: Peach
       value:
-        - '#5f377a'
+        - '#F8ECE5'
     text_color:
       label: White
       value:
