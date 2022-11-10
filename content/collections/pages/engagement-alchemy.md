@@ -63,7 +63,7 @@ blocks:
         type: paragraph
         attrs:
           class: null
-    gradient_background: rust
+    gradient_background: green
   -
     id: wlxFGGmo
     swap_order_of_columns: false
@@ -604,5 +604,5 @@ blocks:
           class: null
 parent: ac915086-2ff0-496b-b734-b7d073d4e587
 updated_by: bd153216-d5f9-4c8b-8d57-d966665b740d
-updated_at: 1668049924
+updated_at: 1668050173
 ---
