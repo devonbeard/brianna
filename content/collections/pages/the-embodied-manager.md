@@ -6,9 +6,9 @@ blocks:
   -
     id: RLzbMWZ1
     background_color:
-      label: Pink
+      label: Peach
       value:
-        - '#ECC5BF'
+        - '#F8ECE5'
     text_color:
       label: Black
       value:
@@ -594,5 +594,5 @@ blocks:
           class: null
 parent: ac915086-2ff0-496b-b734-b7d073d4e587
 updated_by: bd153216-d5f9-4c8b-8d57-d966665b740d
-updated_at: 1668049899
+updated_at: 1668050015
 ---
